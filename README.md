@@ -5,4 +5,3 @@
 - *JDK 9 (jdk-9.0.4)*
 - *IntelliJ IDEA Community edition 2018.3*
 ___
-
