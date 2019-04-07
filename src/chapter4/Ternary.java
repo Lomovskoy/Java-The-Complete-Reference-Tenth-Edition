@@ -19,7 +19,7 @@ public class Ternary {
 
         i = -10;
         k = i < 0 ? -i : i; // Получаем абсалютное значение i
-        
+
         System.out.print("Абсолютное значение ");
         System.out.println(i + " равно " + k);
     }
