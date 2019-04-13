@@ -2,18 +2,17 @@ package chapter5;
 
 /**
  * Программа демонстрирующая,
- * применеие цикла for.
+ * обьявление переменной в нутри цикла for.
  *
  * @author Ломовской К.Ю.
  * @since 13.04.2019
  */
-public class ForTick {
+public class ForTick2 {
 
     public static void main(String[] args) {
 
-        int n;
-
-        for (n = 10; n > 0; n--)
+        // Здесь переменная n объявляется в самом цткле for
+        for (int n = 10; n > 0; n--)
             System.out.println("такт " + n);
     }
 }
