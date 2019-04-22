@@ -5,7 +5,7 @@ package chapter5;
  * применение цикла for для обращения к двумерному массиву.
  *
  * @author Ломовской К.Ю.
- * @since 13.04.2019
+ * @since 22.04.2019
  */
 public class ForEach3 {
 

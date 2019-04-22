@@ -5,7 +5,7 @@ package chapter5;
  * поиск в массиве с применением цикла for в тиле for each.
  *
  * @author Ломовской К.Ю.
- * @since 13.04.2019
+ * @since 22.04.2019
  */
 public class Search {
 
