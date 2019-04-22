@@ -1,4 +1,5 @@
 package chapter5;
+
 /**
  * Программа демонстрирующая,
  * применение цикла for для обращения к двумерному массиву.
@@ -6,7 +7,6 @@ package chapter5;
  * @author Ломовской К.Ю.
  * @since 13.04.2019
  */
-
 public class ForEach3 {
 
     public static void main(String[] args) {
