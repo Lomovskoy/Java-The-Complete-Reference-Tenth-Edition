@@ -15,7 +15,7 @@ public class BreakErr {
         }
 
         for (int j = 0; j < 100; j++){
-            if (j == 10) break one; // Ошибка!
+            if (j == 10) //break one; // Ошибка!
             System.out.print(j + " ");
         }
     }
