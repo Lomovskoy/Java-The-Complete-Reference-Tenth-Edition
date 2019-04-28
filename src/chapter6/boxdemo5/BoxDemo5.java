@@ -1,4 +1,4 @@
-package chapter6.boxdemo4;
+package chapter6.boxdemo5;
 
 /**
  * Программа демонстрирующая,
@@ -7,22 +7,17 @@ package chapter6.boxdemo4;
  * @author Ломовской К.Ю.
  * @since 28.04.2019
  */
-public class BoxDemo4 {
+public class BoxDemo5 {
 
     public static void main(String[] args) {
         // Объявляется объект типа Box
-        Box4 myBox1 = new Box4();
-        Box4 myBox2 = new Box4();
+        Box5 myBox1 = new Box5();
+        Box5 myBox2 = new Box5();
         double vol;
 
-        // Присвоить значение переменным экземпляра класса myBox
-        myBox1.wight = 10;
-        myBox1.height = 20;
-        myBox1.depth = 15;
-        // Присвоить другие значения переменным экземпляра класса myBox
-        myBox2.wight = 3;
-        myBox2.height = 6;
-        myBox2.depth = 9;
+        // Инициализировать каждый экземпляр класса Box
+        myBox1.setDim(10, 20, 15);
+        myBox2.setDim(3, 6, 9);
 
         // Получить объем первого паралелепипеда
         vol = myBox1.volume();
