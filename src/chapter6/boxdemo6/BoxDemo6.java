@@ -1,23 +1,20 @@
-package chapter6.boxdemo5;
+package chapter6.boxdemo6;
 
 /**
  * Программа демонстрирующая,
- * использование класаа Box с методом инициализации.
+ * использование класаа Box возвращающий значение.
  *
  * @author Ломовской К.Ю.
  * @since 28.04.2019
  */
-public class BoxDemo5 {
+public class BoxDemo6 {
 
     public static void main(String[] args) {
-        // Объявляется объект типа Box
-        Box5 myBox1 = new Box5();
-        Box5 myBox2 = new Box5();
-        double vol;
 
-        // Инициализировать каждый экземпляр класса Box
-        myBox1.setDim(10, 20, 15);
-        myBox2.setDim(3, 6, 9);
+        // Объявить, выделить память и инициализировать объекты типа Box
+        Box6 myBox1 = new Box6();
+        Box6 myBox2 = new Box6();
+        double vol;
 
         // Получить объем первого паралелепипеда
         vol = myBox1.volume();
