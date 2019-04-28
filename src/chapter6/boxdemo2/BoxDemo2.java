@@ -11,17 +11,25 @@ public class BoxDemo2 {
 
     public static void main(String[] args) {
         // Объявляется объект типа Box
-        Box2 myBox = new Box2();
+        Box2 myBox1 = new Box2();
+        Box2 myBox2 = new Box2();
         double vol;
 
         // Присвоить значение переменным экземпляра класса myBox
-        myBox.wight = 10;
-        myBox.height = 20;
-        myBox.depth = 15;
+        myBox1.wight = 10;
+        myBox1.height = 20;
+        myBox1.depth = 15;
+        // Присвоить другие значения переменным экземпляра класса myBox
+        myBox2.wight = 3;
+        myBox2.height = 6;
+        myBox2.depth = 9;
 
-        // Расчёт объема паралелепипеда
-        vol = myBox.wight * myBox.height * myBox.depth;
+        // Расчёт объема первого паралелепипеда
+        vol = myBox1.wight * myBox1.height * myBox1.depth;
+        System.out.println("Объем павен " + vol);
 
+        // Расчёт объема второго паралелепипеда
+        vol = myBox2.wight * myBox2.height * myBox2.depth;
         System.out.println("Объем павен " + vol);
     }
 }
