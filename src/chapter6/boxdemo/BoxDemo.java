@@ -22,6 +22,6 @@ public class BoxDemo {
         // Расчёт объема паралелепипеда
         vol = myBox.wight * myBox.height * myBox.depth;
 
-        System.out.println("Объем павен " + vol);
+        System.out.println("Объем равен " + vol);
     }
 }

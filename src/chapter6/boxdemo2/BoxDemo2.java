@@ -26,10 +26,10 @@ public class BoxDemo2 {
 
         // Расчёт объема первого паралелепипеда
         vol = myBox1.wight * myBox1.height * myBox1.depth;
-        System.out.println("Объем павен " + vol);
+        System.out.println("Объем равен " + vol);
 
         // Расчёт объема второго паралелепипеда
         vol = myBox2.wight * myBox2.height * myBox2.depth;
-        System.out.println("Объем павен " + vol);
+        System.out.println("Объем равен " + vol);
     }
 }

@@ -26,10 +26,10 @@ public class BoxDemo4 {
 
         // Получить объем первого паралелепипеда
         vol = myBox1.volume();
-        System.out.println("Объем павен " + vol);
+        System.out.println("Объем равен " + vol);
 
         // Получить объем второго паралелепипеда
         vol = myBox2.volume();
-        System.out.println("Объем павен " + vol);
+        System.out.println("Объем равен " + vol);
     }
 }
