@@ -1,5 +1,12 @@
 package chapter7.overloaddemo;
 
+/**
+ * Программа демонстрирующая,
+ * использование перегрудженных методов.
+ *
+ * @author Ломовской К.Ю.
+ * @since 02.05.2019
+ */
 public class Overload {
 
     public static void main(String[] args) {
