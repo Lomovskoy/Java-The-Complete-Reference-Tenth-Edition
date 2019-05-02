@@ -1,21 +1,16 @@
-package chapter7.overloaddemo;
+package chapter7.overloaddemo2;
 
 /**
- * Программа демонстрирующая, перегрузку метода.
+ * Программа демонстрирующая,
+ * автоматическое преобразование типов при перегрузке.
  *
  * @author Ломовской К.Ю.
  * @since 02.05.2019
  */
-class OverloadDemo {
+class OverloadDemo2 {
 
     void test(){
         System.out.println("Параметры отсутствуют.");
-    }
-
-    // Перегруженный метод, проверяющий наличие
-    // одного целочесленного параметра.
-    void test(int a){
-        System.out.println("a: " + a);
     }
 
     // Перегруженный метод, проверяющий наличие
@@ -26,8 +21,7 @@ class OverloadDemo {
 
     // Перегружаемый метод, проверяющий наличие
     // параметра типа double
-    double test(double a){
-        System.out.println("double: " + a);
-        return a * a;
+    void test(double a){
+        System.out.println("Внутренне преобразование при вызове test(double a): " + a);
     }
 }
