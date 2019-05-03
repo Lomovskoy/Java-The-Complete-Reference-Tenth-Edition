@@ -9,7 +9,7 @@ import java.io.IOException;
  * @author Ломовской К.Ю.
  * @since 11.04.2019
  */
-public class Menu {
+class Menu {
 
     public static void main(String[] args) throws IOException {
 

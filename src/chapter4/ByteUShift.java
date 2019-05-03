@@ -7,7 +7,7 @@ package chapter4;
  * @author Ломовской К.Ю.
  * @since 07.04.2019
  */
-public class ByteUShift {
+class ByteUShift {
 
     public static void main(String[] args) {
         char hex[] = {

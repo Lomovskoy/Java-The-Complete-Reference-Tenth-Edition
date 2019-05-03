@@ -7,7 +7,7 @@ package chapter5;
  * @author Ломовской К.Ю.
  * @since 22.04.2019
  */
-public class BreakLoop4 {
+class BreakLoop4 {
 
     public static void main(String[] args) {
 

@@ -7,7 +7,7 @@ package chapter6.Stask;
  * @author Ломовской К.Ю.
  * @since 28.04.2019
  */
-public class TestStask {
+class TestStask {
 
     public static void main(String[] args) {
         Stask myStask1 = new Stask();

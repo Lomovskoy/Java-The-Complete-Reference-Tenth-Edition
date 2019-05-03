@@ -7,7 +7,7 @@ package chapter5;
  * @author Ломовской К.Ю.
  * @since 13.04.2019
  */
-public class Nasted {
+class Nasted {
 
     public static void main(String[] args) {
 

@@ -7,7 +7,8 @@ package chapter2;
  * @author Ломовской К.Ю.
  * @since 06.04.2019
  */
-public class Exemple {
+class Exemple {
+
     // Эта программа начинается с вызова метода main()
     public static void main(String[] args) {
         System.out.println("Hello World!");

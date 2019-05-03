@@ -7,7 +7,7 @@ package chapter5;
  * @author Ломовской К.Ю.
  * @since 07.04.2019
  */
-public class IfElse {
+class IfElse {
 
     public static void main(String[] args) {
         int month = 4;

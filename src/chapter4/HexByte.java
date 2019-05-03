@@ -7,7 +7,7 @@ package chapter4;
  * @author Ломовской К.Ю.
  * @since 07.04.2019
  */
-public class HexByte {
+class HexByte {
 
     public static void main(String[] args) {
         char hex[] = {

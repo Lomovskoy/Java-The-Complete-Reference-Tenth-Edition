@@ -7,7 +7,7 @@ package chapter2;
  * @author Ломовской К.Ю.
  * @since 06.04.2019
  */
-public class IfSample {
+class IfSample {
 
     public static void main(String[] args) {
         int x, y;

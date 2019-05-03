@@ -7,7 +7,7 @@ package chapter7.overloadconst;
  * @author Ломовской К.Ю.
  * @since 02.05.2019
  */
-public class OverloadConst {
+class OverloadConst {
 
     public static void main(String[] args) {
 

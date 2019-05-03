@@ -7,7 +7,7 @@ package chapter5;
  * @author Ломовской К.Ю.
  * @since 22.04.2019
  */
-public class ForEach3 {
+class ForEach3 {
 
     public static void main(String[] args) {
 

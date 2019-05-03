@@ -7,7 +7,7 @@ package chapter3;
  * @author Ломовской К.Ю.
  * @since 06.04.2019
  */
-public class TwoDAgain {
+class TwoDAgain {
 
     public static void main(String[] args) {
         int twoD[][] = new int[4][];

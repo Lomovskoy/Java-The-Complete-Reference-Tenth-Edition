@@ -7,11 +7,11 @@ package chapter7.passob;
  * @author Ломовской К.Ю.
  * @since 02.05.2019
  */
-public class Test {
+class Test {
 
     int a, b;
 
-    public Test(int i, int j) {
+    Test(int i, int j) {
         a = i;
         b = j;
     }

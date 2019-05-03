@@ -7,7 +7,7 @@ package chapter4;
  * @author Ломовской К.Ю.
  * @since 07.04.2019
  */
-public class OptBitEquals {
+class OptBitEquals {
 
     public static void main(String[] args) {
         int a = 1;

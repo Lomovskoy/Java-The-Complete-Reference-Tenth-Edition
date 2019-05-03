@@ -6,7 +6,7 @@ package chapter3;
  * @author Ломовской К.Ю.
  * @since 06.04.2019
  */
-public class TwoDArray {
+class TwoDArray {
 
     public static void main(String[] args) {
         int twoD[][] = new int[4][5];

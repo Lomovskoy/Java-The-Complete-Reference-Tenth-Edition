@@ -7,7 +7,7 @@ package chapter3;
  * @author Ломовской К.Ю.
  * @since 06.04.2019
  */
-public class DynInit {
+class DynInit {
 
     public static void main(String[] args) {
         double a = 3.0, b = 4.0;

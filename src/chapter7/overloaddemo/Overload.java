@@ -7,7 +7,7 @@ package chapter7.overloaddemo;
  * @author Ломовской К.Ю.
  * @since 02.05.2019
  */
-public class Overload {
+class Overload {
 
     public static void main(String[] args) {
 

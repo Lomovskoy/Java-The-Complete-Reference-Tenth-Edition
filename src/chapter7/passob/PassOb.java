@@ -7,7 +7,7 @@ package chapter7.passob;
  * @author Ломовской К.Ю.
  * @since 02.05.2019
  */
-public class PassOb {
+class PassOb {
 
     public static void main(String[] args) {
         Test obj1 = new Test(100, 22);

@@ -7,7 +7,7 @@ package chapter4;
  * @author Ломовской К.Ю.
  * @since 07.04.2019
  */
-public class BasicMarh {
+class BasicMarh {
 
     public static void main(String[] args) {
         // Арифметические операции над целочисленными значениями.

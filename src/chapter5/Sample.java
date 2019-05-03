@@ -7,7 +7,7 @@ package chapter5;
  * @author Ломовской К.Ю.
  * @since 13.04.2019
  */
-public class Sample {
+class Sample {
 
     public static void main(String[] args) {
 

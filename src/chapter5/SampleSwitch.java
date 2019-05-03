@@ -7,7 +7,7 @@ package chapter5;
  * @author Ломовской К.Ю.
  * @since 11.04.2019
  */
-public class SampleSwitch {
+class SampleSwitch {
 
     public static void main(String[] args) {
 

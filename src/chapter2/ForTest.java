@@ -7,7 +7,7 @@ package chapter2;
  * @author Ломовской К.Ю.
  * @since 06.04.2019
  */
-public class ForTest {
+class ForTest {
 
     public static void main(String[] args) {
         int x;

@@ -7,7 +7,7 @@ package chapter5;
  * @author Ломовской К.Ю.
  * @since 25.04.2019
  */
-public class Break {
+class Break {
 
     public static void main(String[] args) {
         boolean t = true;

@@ -6,7 +6,7 @@ package chapter5;
  * @author Ломовской К.Ю.
  * @since 25.04.2019
  */
-public class BreakErr {
+class BreakErr {
 
     public static void main(String[] args) {
 

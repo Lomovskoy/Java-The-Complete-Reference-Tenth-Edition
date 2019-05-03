@@ -7,7 +7,7 @@ package chapter6.boxdemo3;
  * @author Ломовской К.Ю.
  * @since 28.04.2019
  */
-public class BoxDemo3 {
+class BoxDemo3 {
 
     public static void main(String[] args) {
         // Объявляется объект типа Box

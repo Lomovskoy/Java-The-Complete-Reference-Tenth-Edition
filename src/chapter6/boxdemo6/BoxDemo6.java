@@ -7,7 +7,7 @@ package chapter6.boxdemo6;
  * @author Ломовской К.Ю.
  * @since 28.04.2019
  */
-public class BoxDemo6 {
+class BoxDemo6 {
 
     public static void main(String[] args) {
 

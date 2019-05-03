@@ -7,7 +7,7 @@ package chapter5;
  * @author Ломовской К.Ю.
  * @since 25.04.2019
  */
-public class ContinueLabel {
+class ContinueLabel {
 
     public static void main(String[] args) {
         outer:

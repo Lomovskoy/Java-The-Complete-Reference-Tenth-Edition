@@ -7,7 +7,7 @@ package chapter3;
  * @author Ломовской К.Ю.
  * @since 06.04.2019
  */
-public class Matrix {
+class Matrix {
 
     public static void main(String[] args) {
         double m[][] = {

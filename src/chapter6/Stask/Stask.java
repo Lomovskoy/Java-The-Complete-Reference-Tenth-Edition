@@ -7,7 +7,7 @@ package chapter6.Stask;
  * @author Ломовской К.Ю.
  * @since 28.04.2019
  */
-public class Stask {
+class Stask {
 
     int stask[] = new int[10];
     int tos;
