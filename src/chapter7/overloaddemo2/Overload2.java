@@ -11,7 +11,7 @@ class Overload2 {
 
     public static void main(String[] args) {
 
-        OverloadDemo2 ob = new OverloadDemo2();
+        OverloadDemo ob = new OverloadDemo();
         int i = 88;
 
         ob.test();

@@ -7,17 +7,17 @@ package chapter7.passobjre;
  * @author Ломовской К.Ю.
  * @since 03.05.2019
  */
-class Test2 {
+class Test {
 
     int a, b;
 
-    Test2(int i, int j){
+    Test(int i, int j){
         a = i;
         b = j;
     }
 
     // Передать объект
-    void meth(Test2 o){
+    void meth(Test o){
         o.a *= 2;
         o.b /= 2;
     }

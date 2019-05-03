@@ -11,7 +11,7 @@ public class PassObjRE {
 
     public static void main(String[] args) {
 
-        Test2 ob = new Test2(15, 20);
+        Test ob = new Test(15, 20);
         System.out.println("ob.a и ob.b до вызова: " + ob.a + " " + ob.b);
 
         ob.meth(ob);

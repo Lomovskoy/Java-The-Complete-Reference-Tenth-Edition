@@ -7,7 +7,7 @@ package chapter7.overloaddemo2;
  * @author Ломовской К.Ю.
  * @since 02.05.2019
  */
-class OverloadDemo2 {
+class OverloadDemo {
 
     void test(){
         System.out.println("Параметры отсутствуют.");
