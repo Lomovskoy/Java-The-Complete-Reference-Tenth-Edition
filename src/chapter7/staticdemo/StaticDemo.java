@@ -7,7 +7,7 @@ package chapter7.staticdemo;
  * @author Ломовской К.Ю.
  * @since 20.05.2019
  */
-public class StaticDemo {
+class StaticDemo {
 
     static int a = 42;
     static int b = 99;

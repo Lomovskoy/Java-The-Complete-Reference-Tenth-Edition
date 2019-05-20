@@ -7,7 +7,7 @@ package chapter7;
  * @author Ломовской К.Ю.
  * @since 20.05.2019
  */
-public class UserStatic {
+class UserStatic {
 
     static int a = 3;
     static int b;
