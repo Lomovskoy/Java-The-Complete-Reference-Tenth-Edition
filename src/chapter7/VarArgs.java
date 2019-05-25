@@ -7,7 +7,7 @@ package chapter7;
  * @author Ломовской К.Ю.
  * @since 25.05.2019
  */
-public class VarArgs {
+class VarArgs {
 
     // Теперь метод vaTest() объявляется с аргументами
     // переменной длинны

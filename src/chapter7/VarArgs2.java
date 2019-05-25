@@ -7,7 +7,7 @@ package chapter7;
  * @author Ломовской К.Ю.
  * @since 25.05.2019
  */
-public class VarArgs2 {
+class VarArgs2 {
 
     // В данном примере mgs - обычный переметр,
     // а v - переметр переременной длинны

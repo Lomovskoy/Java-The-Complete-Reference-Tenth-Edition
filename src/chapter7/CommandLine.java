@@ -9,7 +9,7 @@ package chapter7;
  * @author Ломовской К.Ю.
  * @since 20.05.2019
  */
-public class CommandLine {
+class CommandLine {
 
     public static void main(String[] args) {
         for (int i = 0; i < args.length; i++)

@@ -7,7 +7,7 @@ package chapter7;
  * @author Ломовской К.Ю.
  * @since 25.05.2019
  */
-public class SpringDemo3 {
+class SpringDemo3 {
 
     public static void main(String[] args) {
 

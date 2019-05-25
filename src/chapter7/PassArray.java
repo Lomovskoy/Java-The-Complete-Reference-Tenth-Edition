@@ -7,7 +7,7 @@ package chapter7;
  * @author Ломовской К.Ю.
  * @since 25.05.2019
  */
-public class PassArray {
+class PassArray {
 
     static void vaTest(int v[]){
         System.out.print("Количесво аргументов: " + v.length + " Содержимое: ");
