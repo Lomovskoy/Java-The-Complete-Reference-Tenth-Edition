@@ -1,4 +1,4 @@
-package chapter8;
+package chapter8.simpleinheritance;
 
 /**
  * Программа демонстрирующая, просто пример наследования.
@@ -6,7 +6,7 @@ package chapter8;
  * @author Ломовской К.Ю.
  * @since 25.05.2019
  */
-public class SimpleInheritance {
+class SimpleInheritance {
 
     public static void main(String[] args) {
 

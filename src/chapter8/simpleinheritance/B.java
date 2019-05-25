@@ -1,4 +1,4 @@
-package chapter8;
+package chapter8.simpleinheritance;
 
 /**
  * Программа демонстрирующая, создание подкласса
