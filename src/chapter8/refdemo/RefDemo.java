@@ -7,7 +7,7 @@ package chapter8.refdemo;
  * @author Ломовской К.Ю.
  * @since 26.05.2019
  */
-public class RefDemo {
+class RefDemo {
 
     public static void main(String[] args) {
 

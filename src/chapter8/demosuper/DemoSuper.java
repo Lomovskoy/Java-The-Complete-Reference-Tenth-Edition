@@ -7,7 +7,7 @@ package chapter8.demosuper;
  * @author Ломовской К.Ю.
  * @since 26.05.2019
  */
-public class DemoSuper {
+class DemoSuper {
 
     public static void main(String[] args) {
 

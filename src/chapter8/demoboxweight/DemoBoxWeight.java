@@ -7,7 +7,7 @@ package chapter8.demoboxweight;
  * @author Ломовской К.Ю.
  * @since 25.05.2019
  */
-public class DemoBoxWeight {
+class DemoBoxWeight {
 
     public static void main(String[] args) {
 
