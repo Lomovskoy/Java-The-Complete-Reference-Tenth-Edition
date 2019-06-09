@@ -7,7 +7,7 @@ package chapter8.abstractdemo;
  * @author Ломовской К.Ю.
  * @since 09.06.2019
  */
-public class B extends A{
+class B extends A{
 
     @Override
     void callme() {

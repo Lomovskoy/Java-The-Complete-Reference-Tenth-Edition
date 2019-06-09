@@ -7,7 +7,7 @@ package chapter8.usesuper;
  * @author Ломовской К.Ю.
  * @since 26.05.2019
  */
-public class UseSuper {
+class UseSuper {
 
     public static void main(String[] args) {
 

@@ -6,7 +6,7 @@ package chapter8.usesuper;
  * @author Ломовской К.Ю.
  * @since 26.05.2019
  */
-public class B extends A{
+class B extends A{
 
     int i; // Этот член i скрывает член i из класса А
 

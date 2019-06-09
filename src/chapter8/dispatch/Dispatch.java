@@ -7,7 +7,7 @@ package chapter8.dispatch;
  * @author Ломовской К.Ю.
  * @since 09.06.2019
  */
-public class Dispatch {
+class Dispatch {
 
     public static void main(String[] args) {
 

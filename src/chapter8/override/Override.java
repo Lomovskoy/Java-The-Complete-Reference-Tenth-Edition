@@ -7,7 +7,7 @@ package chapter8.override;
  * @author Ломовской К.Ю.
  * @since 25.05.2019
  */
-public class Override {
+class Override {
 
     public static void main(String[] args) {
         B subOb = new B(1, 2, 3);

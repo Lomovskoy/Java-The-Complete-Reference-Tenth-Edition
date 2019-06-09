@@ -7,7 +7,7 @@ package chapter8.demoshipment;
  * @author Ломовской К.Ю.
  * @since 26.05.2019
  */
-public class DemoShipment {
+class DemoShipment {
 
     public static void main(String[] args) {
 

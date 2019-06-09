@@ -7,7 +7,7 @@ package chapter8.abstractdemo;
  * @author Ломовской К.Ю.
  * @since 09.06.2019
  */
-public class AbstractDemo {
+class AbstractDemo {
 
     public static void main(String[] args) {
 
