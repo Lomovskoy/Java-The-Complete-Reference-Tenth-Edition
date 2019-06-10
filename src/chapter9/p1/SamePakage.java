@@ -7,7 +7,7 @@ package chapter9.p1;
  * @author Ломовской К.Ю.
  * @since 10.06.2019
  */
-public class SamePakage {
+class SamePakage {
 
     SamePakage(){
 

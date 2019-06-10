@@ -7,7 +7,7 @@ package chapter9.testinterfase;
  * @author Ломовской К.Ю.
  * @since 10.06.2019
  */
-public abstract class Incomplite implements Callback{
+abstract class Incomplite implements Callback{
 
     int a, b;
 

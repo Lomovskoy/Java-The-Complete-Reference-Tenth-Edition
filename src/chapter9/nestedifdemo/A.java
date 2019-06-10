@@ -7,7 +7,7 @@ package chapter9.nestedifdemo;
  * @author Ломовской К.Ю.
  * @since 10.06.2019
  */
-public class A {
+class A {
 
     // Это вложденный интерфейс
     public interface NestedIF{

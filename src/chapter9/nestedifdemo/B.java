@@ -7,7 +7,7 @@ package chapter9.nestedifdemo;
  * @author Ломовской К.Ю.
  * @since 10.06.2019
  */
-public class B implements A.NestedIF{
+class B implements A.NestedIF{
 
     @Override
     public boolean isNotNegative(int x) {

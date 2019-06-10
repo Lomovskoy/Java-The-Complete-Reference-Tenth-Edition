@@ -7,7 +7,7 @@ package chapter9.testinterfase;
  * @author Ломовской К.Ю.
  * @since 10.06.2019
  */
-public class Client implements Callback{
+class Client implements Callback{
 
     // Реализовать метод интерфейся Callback
     @Override

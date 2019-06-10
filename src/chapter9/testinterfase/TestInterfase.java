@@ -7,7 +7,7 @@ package chapter9.testinterfase;
  * @author Ломовской К.Ю.
  * @since 10.06.2019
  */
-public class TestInterfase {
+class TestInterfase {
 
     public static void main(String[] args) {
 
