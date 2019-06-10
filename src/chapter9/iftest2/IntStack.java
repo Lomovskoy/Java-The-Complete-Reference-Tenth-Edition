@@ -7,7 +7,7 @@ package chapter9.iftest2;
  * @author Ломовской К.Ю.
  * @since 10.06.2019
  */
-public interface IntStack {
+interface IntStack {
     void push(int item);    // Сохранить элемент в стек
     int pop();              // Извлечь элемент из стека
 }
