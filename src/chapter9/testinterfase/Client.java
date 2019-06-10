@@ -1,4 +1,4 @@
-package chapter9.callback;
+package chapter9.testinterfase;
 
 /**
  * Программа демонстрирующая,
@@ -12,7 +12,7 @@ public class Client implements Callback{
     // Реализовать метод интерфейся Callback
     @Override
     public void callback(int param) {
-        System.out.println("Метод callback()б вызываемый со значением " + param);
+        System.out.println("Метод callback() вызываемый со значением " + param);
     }
 
     void nonInterface(){

@@ -1,4 +1,4 @@
-package chapter9.callback;
+package chapter9.testinterfase;
 
 /**
  * Программа демонстрирующая,
