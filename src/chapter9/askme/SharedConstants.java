@@ -5,7 +5,7 @@ package chapter9.askme;
  * переменные в интерфейсах.
  *
  * @author Ломовской К.Ю.
- * @since 10.06.2019
+ * @since 11.06.2019
  */
 interface SharedConstants {
     int NO = 0;

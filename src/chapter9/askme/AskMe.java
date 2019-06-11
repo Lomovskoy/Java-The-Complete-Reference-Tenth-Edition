@@ -5,7 +5,7 @@ package chapter9.askme;
  * использование переменных в интерфейсах.
  *
  * @author Ломовской К.Ю.
- * @since 10.06.2019
+ * @since 11.06.2019
  */
 public class AskMe implements SharedConstants {
 
