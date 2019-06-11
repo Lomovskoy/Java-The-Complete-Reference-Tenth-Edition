@@ -9,7 +9,7 @@ package chapter9.myif;
  */
 class MyIfImpl implements MyIf {
 
-    // В этом класса додден быть реализован только
+    // В этом класса должен быть реализован только
     // метод getNumber(), определённый в интерфейсе MyIf
     // А вызов метода getString()резрешается по умолчанию
     public int getNumber() {
