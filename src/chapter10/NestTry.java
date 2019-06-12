@@ -35,7 +35,7 @@ public class NestTry {
                 if (a == 2){
                     int[] c = {1};
                     c[42] = 99;     // Здесь генерируется исключение.
-                                    // В СВЯЗИ С ВЫХОДОМ ЗА ПРЕДЕЛЫ МАССИВА
+                                    // в связи с выходом за пределлы массива.
                 }
             }catch (ArrayIndexOutOfBoundsException e){
                 System.out.println("Индекс за пределами массива " + e);
