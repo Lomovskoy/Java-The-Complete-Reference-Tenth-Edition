@@ -7,7 +7,7 @@ package chapter10;
  * @author Ломовской К.Ю.
  * @since 12.06.2019
  */
-public class ThrowDemo {
+class ThrowDemo {
 
     static void demoProc() {
         try {

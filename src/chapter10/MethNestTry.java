@@ -7,7 +7,7 @@ package chapter10;
  * @author Ломовской К.Ю.
  * @since 11.06.2019
  */
-public class MethNestTry {
+class MethNestTry {
 
     static void nestTry(int a){
         // Влодженный блок оператора try

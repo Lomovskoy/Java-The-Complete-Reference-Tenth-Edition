@@ -7,7 +7,7 @@ package chapter10;
  * @author Ломовской К.Ю.
  * @since 12.06.2019
  */
-public class NestTry {
+class NestTry {
 
     public static void main(String[] args) {
         try {
