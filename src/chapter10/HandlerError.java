@@ -7,9 +7,9 @@ import java.util.Random;
  * исключения и продолжения работы.
  *
  * @author Ломовской К.Ю.
- * @since 10.06.2019
+ * @since 11.06.2019
  */
-public class HandError {
+class HandlerError {
 
     public static void main(String[] args) {
 

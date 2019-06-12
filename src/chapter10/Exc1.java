@@ -5,9 +5,9 @@ package chapter10;
  * пример не обрабатываемого исключения.
  *
  * @author Ломовской К.Ю.
- * @since 10.06.2019
+ * @since 11.06.2019
  */
-public class Exc1 {
+class Exc1 {
 
     static void subRoutIne(){
         int d = 0;

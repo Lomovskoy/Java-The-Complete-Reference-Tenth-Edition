@@ -5,9 +5,9 @@ package chapter10;
  * пример обрабатываемого исключения.
  *
  * @author Ломовской К.Ю.
- * @since 10.06.2019
+ * @since 11.06.2019
  */
-public class Exc2 {
+class Exc2 {
 
     public static void main(String[] args) {
         int d, a;
