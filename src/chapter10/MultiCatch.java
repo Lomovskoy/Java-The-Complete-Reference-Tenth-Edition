@@ -7,7 +7,7 @@ package chapter10;
  * @author Ломовской К.Ю.
  * @since 12.06.2019
  */
-public class MultiCatch {
+class MultiCatch {
 
     public static void main(String[] args) {
         int a = 10, b = 0;

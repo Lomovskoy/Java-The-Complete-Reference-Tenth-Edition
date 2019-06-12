@@ -7,7 +7,7 @@ package chapter10.exeptiondemo;
  * @author Ломовской К.Ю.
  * @since 12.06.2019
  */
-public class ExeptionDemo {
+class ExeptionDemo {
 
     static void compute(int a) throws MyExeption{
         System.out.println("Вызывн метод compute(" + a + ")");
