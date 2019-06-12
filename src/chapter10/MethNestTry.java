@@ -29,4 +29,21 @@ public class MethNestTry {
             System.out.println("Индекс за пределами масива " + e);
         }
     }
+
+    public static void main(String[] args) {
+        try {
+            int a = args.length;
+            /* Если не указанны аргументы командной строки,
+             * в следующем операторе были сгенерированно
+             * исключение в связи с делением на ноль
+             */
+            int b = 42 / a;
+
+            System.out.println("а = " + a);
+
+            nestTry(a);
+        }catch (ArrayIndexOutOfBoundsException e){
+            System.out.println("Деление на ноль " + e);
+        }
+    }
 }
