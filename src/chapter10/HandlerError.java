@@ -7,7 +7,7 @@ import java.util.Random;
  * исключения и продолжения работы.
  *
  * @author Ломовской К.Ю.
- * @since 11.06.2019
+ * @since 12.06.2019
  */
 class HandlerError {
 

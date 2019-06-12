@@ -5,7 +5,7 @@ package chapter10;
  * не явно вложеннвых операторов try.
  *
  * @author Ломовской К.Ю.
- * @since 11.06.2019
+ * @since 12.06.2019
  */
 class MethNestTry {
 

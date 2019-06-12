@@ -5,7 +5,7 @@ package chapter10;
  * нескольких операторов catch.
  *
  * @author Ломовской К.Ю.
- * @since 11.06.2019
+ * @since 12.06.2019
  */
 class MultipleCatches {
 
