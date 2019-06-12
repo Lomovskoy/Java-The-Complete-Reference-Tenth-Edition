@@ -19,7 +19,8 @@ public class SuperSubCatch {
             System.out.println("Перехват общего класса Exception.");
         }
         /* Этот оператор вообще не будет достигнут, так как подкласс
-        ArithmeticException является *производным от класса Exception*/
+         * ArithmeticException является *производным от класса Exception
+         */
 //        catch (ArithmeticException e){
 //            // Ошибка: недостижимый код
 //            System.out.println("Этот код вообще не достижим");
