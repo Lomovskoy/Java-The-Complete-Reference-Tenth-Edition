@@ -31,7 +31,7 @@ class DemoJoin {
         System.out.println("Поток один запущен: " + ob1.t.isAlive());
         System.out.println("Поток два запущен: " + ob2.t.isAlive());
         System.out.println("Поток три запущен: " + ob3.t.isAlive());
-        
+
         System.out.println("Главный поток завершён.");
     }
 }
