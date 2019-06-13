@@ -7,7 +7,7 @@ package chapter11;
  * @author Ломовской К.Ю.
  * @since 13.06.2019
  */
-public class CurrentThreadDemo {
+class CurrentThreadDemo {
 
     public static void main(String[] args) {
         Thread t = Thread.currentThread();
