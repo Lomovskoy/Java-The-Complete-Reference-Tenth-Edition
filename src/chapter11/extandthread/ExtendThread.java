@@ -1,17 +1,16 @@
-package chapter11.threaddemo;
+package chapter11.extandthread;
 
 /**
- * Программа демонстрирующая,
- * создание второго потока исполнения.
+ * Программа демонстрирующая, создание второго потока
+ * исполнения путём наследования суперкласса Thread.
  *
  * @author Ломовской К.Ю.
  * @since 13.06.2019
  */
-class ThreadDemo {
+class ExtendThread {
 
     public static void main(String[] args) {
-        // Создать новый поток
-        new NewThread();
+        new NewThread();    // Создать новый поток исполнения
 
         try {
             for (int i = 5; i > 0; i--){
@@ -21,6 +20,6 @@ class ThreadDemo {
         }catch (InterruptedException e){
             System.out.println("Главный поток прерван.");
         }
-        System.out.println("Главный поток заввершён.");
+        System.out.println("Главнцыйпоток завершён.");
     }
 }

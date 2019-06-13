@@ -1,13 +1,13 @@
 package chapter11.threaddemo;
 
 /**
- * Программа демонстрирующая,
- * создание второго потока исполнения.
+ * Программа демонстрирующая, создание второго потока
+ * исполнения путём реализации интерфейса Runnable.
  *
  * @author Ломовской К.Ю.
  * @since 13.06.2019
  */
-public class NewThread implements Runnable{
+class NewThread implements Runnable{
 
     Thread t;
 
@@ -26,7 +26,8 @@ public class NewThread implements Runnable{
                 Thread.sleep(500);
             }
         }catch (InterruptedException e){
-            System.out.println("Дочерний поток завершён.");
+            System.out.println("Дочерний поток прерван.");
         }
+        System.out.println("Дочерний поток завершён.");
     }
 }
