@@ -7,7 +7,7 @@ package chapter11.deadlock;
  * @author Ломовской К.Ю.
  * @since 14.06.2019
  */
-public class DeathLock implements Runnable{
+class DeathLock implements Runnable{
 
     A a = new A();
     B b = new B();

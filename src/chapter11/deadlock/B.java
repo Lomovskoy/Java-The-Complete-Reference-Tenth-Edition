@@ -7,7 +7,7 @@ package chapter11.deadlock;
  * @author Ломовской К.Ю.
  * @since 14.06.2019
  */
-public class B {
+class B {
 
     synchronized void bar(A a){
 

@@ -7,8 +7,10 @@ package chapter11.pc;
  * @author Ломовской К.Ю.
  * @since 14.06.2019
  */
-public class PC {
+class PC {
+
     public static void main(String[] args) {
+
         Q q = new Q();
         new Producer(q);
         new Consumer(q);

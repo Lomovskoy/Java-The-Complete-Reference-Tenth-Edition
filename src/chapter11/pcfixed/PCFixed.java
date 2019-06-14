@@ -7,8 +7,10 @@ package chapter11.pcfixed;
  * @author Ломовской К.Ю.
  * @since 14.06.2019
  */
-public class PCFixed {
+class PCFixed {
+
     public static void main(String[] args) {
+
         Q q = new Q();
         new Producer(q);
         new Consumer(q);

@@ -7,7 +7,7 @@ package chapter11.pc;
  * @author Ломовской К.Ю.
  * @since 14.06.2019
  */
-public class Consumer implements Runnable{
+class Consumer implements Runnable{
 
     Q q;
 

@@ -7,7 +7,7 @@ package chapter11.pcfixed;
  * @author Ломовской К.Ю.
  * @since 14.06.2019
  */
-public class Producer implements Runnable {
+class Producer implements Runnable {
 
     Q q;
 
