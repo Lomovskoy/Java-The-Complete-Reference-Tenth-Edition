@@ -7,7 +7,7 @@ package chapter11.synch;
  * @author Ломовской К.Ю.
  * @since 13.06.2019
  */
-public class Caller implements Runnable{
+class Caller implements Runnable{
 
     String mgs;
     Callme target;

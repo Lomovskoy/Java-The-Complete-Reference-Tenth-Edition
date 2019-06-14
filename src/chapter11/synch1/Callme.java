@@ -5,7 +5,7 @@ package chapter11.synch1;
  * синхронизированный бок кода.
  *
  * @author Ломовской К.Ю.
- * @since 13.06.2019
+ * @since 14.06.2019
  */
 class Callme {
 
