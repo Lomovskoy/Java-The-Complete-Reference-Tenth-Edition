@@ -7,7 +7,7 @@ package chapter12.enumdemo4;
  * @author Ломовской К.Ю.
  * @since 15.06.2019
  */
-public class EnumDemo4 {
+class EnumDemo4 {
 
     public static void main(String[] args) {
 
