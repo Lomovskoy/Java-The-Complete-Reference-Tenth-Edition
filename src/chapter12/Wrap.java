@@ -7,7 +7,7 @@ package chapter12;
  * @author Ломовской К.Ю.
  * @since 15.06.2019
  */
-public class Wrap {
+class Wrap {
 
     public static void main(String[] args) {
 
