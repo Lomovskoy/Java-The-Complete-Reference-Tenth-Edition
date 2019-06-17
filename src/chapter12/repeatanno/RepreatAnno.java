@@ -15,8 +15,10 @@ public class RepreatAnno {
     // Повторить аннотацию MyAnno в методе myMeth()
     @MyAnno(str = "Первая аннотация", val = -1)
     @MyAnno(str = "Вторая аннотация", val = 100)
-    public static void myMeth() {
+    public static void myMeth(String str, int i) {
+
         RepreatAnno ob = new RepreatAnno();
+
         try {
             Class<?> c = ob.getClass();
 
@@ -26,12 +28,13 @@ public class RepreatAnno {
             // Вывести повторяющиеся аннотации
             Annotation anno = m.getAnnotation(MyRepreatedAnnos.class);
             System.out.println(anno);
+
         }catch (NoSuchMethodException ex){
             System.out.println("Метод не найден.");
         }
     }
 
     public static void main(String[] args) {
-        myMeth();
+        myMeth("test", 10);
     }
 }
