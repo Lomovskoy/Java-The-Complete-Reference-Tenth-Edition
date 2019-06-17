@@ -5,7 +5,7 @@ package chapter12;
  * простой тип аннотации.
  *
  * @author Ломовской К.Ю.
- * @since 15.06.2019
+ * @since 17.06.2019
  */
 @interface MyAnno {
 

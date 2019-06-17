@@ -8,7 +8,7 @@ import java.lang.annotation.RetentionPolicy;
  * MyAnnoRun со степенью сохранности RUNTIME.
  *
  * @author Ломовской К.Ю.
- * @since 15.06.2019
+ * @since 17.06.2019
  */
 @Retention(RetentionPolicy.RUNTIME)
 @interface MyAnnoRun {
