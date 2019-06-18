@@ -11,16 +11,17 @@ import java.io.InputStreamReader;
  * @author Ломовской К.Ю.
  * @since 18.06.2019
  */
-class BRRead {
-
+class BRReadLine {
     public static void main(String[] args) throws IOException {
-        char c;
+        // Создать поток ввода типа BufferedReader,
+        // используя стандартный поток ввода System.in
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        System.out.println("Введите символы, 'q' - для выхода.");
-        // Читать символы.
+        String str;
+        System.out.println("Введите строки текста");
+        System.out.println("Введите 'стоп' для завершения.");
         do {
-            c = (char) br.read();
-            System.out.print(c);
-        }while (c != 'q');
+            str =  br.readLine();
+            System.out.println(str);
+        }while (!str.equals("стоп"));
     }
 }
