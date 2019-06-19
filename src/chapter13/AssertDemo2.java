@@ -1,13 +1,13 @@
 package chapter13;
 
 /**
- * Программа демонстрирующая,
+ * Программа демонстрирующая, неудачное
  * применение ключевого слова assert.
  *
  * @author Ломовской К.Ю.
  * @since 19.06.2019
  */
-class AssertDemo {
+class AssertDemo2 {
 
     static int val = 3;
 
@@ -17,14 +17,13 @@ class AssertDemo {
     }
 
     public static void main(String[] args) {
-        int n;
+
+        int n = 0;
 
         for (int i = 0; i < 10; i++){
-            n = getNum();
 
-            assert n > 0: "n отрицательное";   // Не подтвердится если n == 0
-
-            System.out.println("n равно " + n);
+            assert (n = getNum()) > 0;
+            System.out.println("n is " + n);
         }
     }
 }
