@@ -1,11 +1,14 @@
-package chapter8.usesuper;
+package chapter8.callingcons;
 
 /**
  * Программа демонстрирующая, создание супер класса.
  *
  * @author Ломовской К.Ю.
- * @since 26.05.2019
+ * @since 25.05.2019
  */
-class A {
-    int i;
+class A2 {
+
+    A2(){
+        System.out.println("В конструкторе А.");
+    }
 }

@@ -7,7 +7,7 @@ package chapter8.override2;
  * @author Ломовской К.Ю.
  * @since 25.05.2019
  */
-class B extends A {
+class B extends A3 {
 
     int k;
 

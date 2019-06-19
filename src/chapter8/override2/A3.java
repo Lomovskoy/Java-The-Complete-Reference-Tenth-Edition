@@ -6,11 +6,11 @@ package chapter8.override2;
  * @author Ломовской К.Ю.
  * @since 25.05.2019
  */
-class A {
+class A3 {
 
     int i, j;
 
-    A(int a, int b){
+    A3(int a, int b){
         i = a;
         j = b;
     }

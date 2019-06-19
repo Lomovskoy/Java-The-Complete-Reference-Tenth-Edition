@@ -7,7 +7,7 @@ package chapter8.callingcons;
  * @author Ломовской К.Ю.
  * @since 25.05.2019
  */
-class B extends A {
+class B extends A2 {
 
     B(){
         System.out.println("В конструкторе B.");
