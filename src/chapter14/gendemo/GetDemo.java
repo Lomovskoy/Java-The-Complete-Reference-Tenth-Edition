@@ -8,6 +8,7 @@ package chapter14.gendemo;
  * @since 19.06.2019
  */
 class GetDemo {
+
     public static void main(String[] args) {
         // Созхдать ссылку типа Gen для целых чисел
         Gen<Integer> iOb;
