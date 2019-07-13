@@ -9,6 +9,7 @@ package chapter14.gendemo;
  * @since 19.06.2019
  */
 class Gen<T> {
+
     T ob;
 
     // Передаём контруктору ссылку на объект типа Т
