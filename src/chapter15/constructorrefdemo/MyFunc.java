@@ -7,6 +7,6 @@ package chapter15.constructorrefdemo;
  * @author Ломовской К.Ю.
  * @since 27.07.2019
  */
-interface MyFunc<T> {
+interface MyFunc {
     MyClass func(int i);
 }
