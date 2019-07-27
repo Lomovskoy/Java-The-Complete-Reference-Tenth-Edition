@@ -1,12 +1,18 @@
 package chapter15.usemethodref;
 
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Collections;
 
-public class UseMethoDref {
+/**
+ * Класс демонстрирующий использование ссылки на метод,
+ * чтобы найти максимальное значение в коллекции.
+ *
+ * @author Ломовской К.Ю.
+ * @since 27.07.2019
+ */
+class UseMethoDref {
 
-    static int compareMC(MyClass a, MyClass b){
+    static int compareMC(MyClass a, MyClass b) {
         return a.getVal() - b.getVal();
     }
 
