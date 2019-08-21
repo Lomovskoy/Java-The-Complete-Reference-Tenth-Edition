@@ -38,6 +38,6 @@ class ParseDemo {
             sum += i;
             System.out.println("Текущая сумма: " + sum);
         }while (i != 0);
-        
+
     }
 }
