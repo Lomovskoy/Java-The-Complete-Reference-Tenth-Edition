@@ -5,7 +5,7 @@ package chapter18;
  * totalMemory(), freeMemory() и gc().
  *
  * @author Ломовской К.Ю.
- * @since 21.08.2019
+ * @since 22.08.2019
  */
 class MemoryDemo {
 
