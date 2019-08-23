@@ -1,7 +1,7 @@
-package chapter18.clonedemo;
+package chapter18.clonedemo2;
 
 /**
- * Класс демонстрирующий применение метода clone().
+ * Класс демонстрирующий переопределение метода clone().
  *
  * @author Ломовской К.Ю.
  * @since 23.08.2019
@@ -11,11 +11,11 @@ class TestClone implements Cloneable{
     int a;
     double b;
 
-    // В этом методе вызывается метод clone() из класса Object
-    TestClone cloneTest(){
+    // Метод clone() переопределяется перерь как public
+    public Object clone(){
         try {
             // Вызвать метод clone() из класса Object
-            return (TestClone) super.clone();
+            return super.clone();
         }catch (CloneNotSupportedException e){
             System.out.println("Клонирование невозможно.");
             return this;
