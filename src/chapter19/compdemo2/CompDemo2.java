@@ -1,4 +1,4 @@
-package chapter19.compdemo;
+package chapter19.compdemo2;
 
 import java.util.TreeSet;
 
@@ -9,12 +9,12 @@ import java.util.TreeSet;
  * @author Ломовской К.Ю.
  * @since 27.08.2019
  */
-class CompDemo {
+class CompDemo2 {
 
     public static void main(String[] args) {
 
         // Создаём древовидное множество
-        TreeSet<String> ts = new TreeSet<String>(new MyComp());
+        TreeSet<String> ts = new TreeSet<String>(new MyComp().reversed());
 
         // Ввести элементы в древовидное множество
         ts.add("C");
@@ -27,7 +27,7 @@ class CompDemo {
         // Вывести элементы из древовидного множества
         for (String element: ts)
             System.out.print(element + " ");
-
+        
         System.out.println();
     }
 }
