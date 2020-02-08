@@ -1,6 +1,7 @@
 package chapter19;
 
 import java.util.Enumeration;
+import java.util.Iterator;
 import java.util.Vector;
 
 /**
@@ -53,5 +54,17 @@ public class VectorDemo {
         while (vectorEnum.hasMoreElements())
             System.out.print(vectorEnum.nextElement() + " ");
         System.out.println();
+
+        System.out.println("Элементы вектора");
+        Iterator<Integer> vectorIter = vector.iterator();
+        while (vectorIter.hasNext())
+            System.out.print(vectorIter.next() + " ");
+        System.out.println();
+
+        System.out.println("Элементы вектора");
+        for (int element : vector)
+            System.out.print(element + " ");
+        System.out.println();
+
     }
 }
