@@ -5,16 +5,21 @@ import java.util.Set;
 
 /**
  * Класс демонстрирующий применение
- * списка свойств.
+ * списка свойств по умолчанию.
  *
  * @author Ломовской К.Ю.
  * @since 08.02.2020
  */
-public class PropDemo {
+public class PropDemoDef {
 
     public static void main(String[] args) {
 
-        Properties capitals = new Properties();
+        Properties defList = new Properties();
+
+        defList.put("Флорида", "Теллеси");
+        defList.put("Висконсин", "Мэдисон");
+
+        Properties capitals = new Properties(defList);
 
         capitals.put("Иллиноис", "Спрингфилд");
         capitals.put("Миссури", "Джефферсон-Сити");
@@ -30,9 +35,10 @@ public class PropDemo {
             System.out.println("Столица штата " + name + " - " + capitals.getProperty((String) name) + ".");
         System.out.println();
 
-        // Найти штат отсутствующий в списке,
-        // указав значения, выбираемые по умолчанию.
+        // Теперь Флорида будет найденна
+        // в списке по умолчанию
         String str = capitals.getProperty("Флорида", "не найденна");
         System.out.println("Столица штата Флорида - " + str + ".");
+
     }
 }
