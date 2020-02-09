@@ -15,7 +15,6 @@ public class CurDemo {
     public static void main(String[] args) {
 
         Currency currency;
-
         currency = Currency.getInstance(Locale.US);
 
         System.out.println("Символ: " + currency.getSymbol());
