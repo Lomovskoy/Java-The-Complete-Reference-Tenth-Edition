@@ -7,7 +7,7 @@ import java.util.Formatter;
  * спецификаторов шырины поля.
  *
  * @author Ломовской К.Ю.
- * @since 09.02.2020
+ * @since 10.02.2020
  */
 public class FormatDemo4 {
 
