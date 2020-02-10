@@ -13,7 +13,7 @@ public class FieldWidthDemo {
 
     public static void main(String[] args) {
 
-        Formatter formatter = new Formatter();
+        Formatter formatter;
 
         for (int i = 1; i <= 10; i++){
             formatter = new Formatter();
