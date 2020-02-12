@@ -20,7 +20,7 @@ public class AvgFile {
 
         // ввести данные в файл
         FileWriter fileWriter = new FileWriter("test.txt");
-        fileWriter .write("2 3.4 5 6 7.4 9.1 10.5 готово");
+        fileWriter.write("2 3,4 5 6 7,4 9,1 10,5 готово");
         fileWriter.close();
 
         FileReader fileReader = new FileReader("test.txt");
