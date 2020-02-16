@@ -18,7 +18,7 @@ public class FileInputStreamDemo {
 
         // Для автоматического закрытия потока ввода
         // используется оператор try с ресурсами
-        try (FileInputStream f = new FileInputStream("FileInputStreamDemo.java")){
+        try (FileInputStream f = new FileInputStream("E:/Програмирование/Курсы/Java/Java-The-Complete-Reference-Tenth-Edition/src/chapter21/FileInputStreamDemo.java")){
             System.out.println("Общее количество доступных байтов: " + (size = f.available()));
             int n = size / 40;
 
