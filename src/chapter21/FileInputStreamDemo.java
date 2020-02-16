@@ -18,14 +18,15 @@ public class FileInputStreamDemo {
 
         // Для автоматического закрытия потока ввода
         // используется оператор try с ресурсами
-        try (FileInputStream f = new FileInputStream("E:/Програмирование/Курсы/Java/Java-The-Complete-Reference-Tenth-Edition/src/chapter21/FileInputStreamDemo.java")){
+        try (FileInputStream f = new FileInputStream("E:/Програмирование/Курсы/Java/" +
+                "Java-The-Complete-Reference-Tenth-Edition/src/chapter21/FileInputStreamDemo.java")){
             System.out.println("Общее количество доступных байтов: " + (size = f.available()));
             int n = size / 40;
 
             System.out.println("Первые " + n + " байтов, прочитанных из файла по очереди методом read()");
 
             for (int i = 0; i < n; i++){
-                System.out.println((char) f.read());
+                System.out.print((char) f.read());
             }
 
             System.out.println("\nВсё ещё доступно: " + f.available());
