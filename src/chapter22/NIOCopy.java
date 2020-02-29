@@ -26,7 +26,7 @@ public class NIOCopy {
             // Скопировать файл
             Files.copy(source, target, StandardCopyOption.REPLACE_EXISTING);
 
-        }catch (InvalidPathException e) {
+        } catch (InvalidPathException e) {
             System.out.println("Ошибка указания пути " + e);
         } catch (IOException e) {
             System.out.println("Ошибка ввода-вывода " + e);
