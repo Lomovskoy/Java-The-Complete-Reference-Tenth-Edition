@@ -44,7 +44,7 @@ public class DirList2 {
             System.out.println("Ошибка указания пути " + e);
         } catch (NotDirectoryException e) {
             System.out.println(dirName + " - не является каталогом " + e);
-        }catch (IOException e) {
+        } catch (IOException e) {
             System.out.println("Ошибка ввода-вывода " + e);
         }
     }
