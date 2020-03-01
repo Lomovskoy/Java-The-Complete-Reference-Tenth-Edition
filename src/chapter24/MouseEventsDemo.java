@@ -17,6 +17,12 @@ public class MouseEventsDemo extends Frame implements MouseListener, MouseMotion
     int mouseX = 0;
     int mouseY = 0;
 
+    public MouseEventsDemo() {
+        addMouseListener(this);
+        addMouseMotionListener(this);
+        addWindowListener(new MyWindowAdapter());
+    }
+
     @Override // Обработать события от щелчка кнопок мыши
     public void mouseClicked(MouseEvent me) {
         mgs = mgs + " -- click received";
