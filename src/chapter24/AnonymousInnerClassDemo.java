@@ -1,8 +1,5 @@
 package chapter24;
 
-import chapter24.adapterdemo.AdapterDemo;
-import chapter24.adapterdemo.MyMouseAdapter;
-
 import java.awt.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
@@ -11,18 +8,32 @@ import java.awt.event.WindowEvent;
 
 /**
  * В это программе демонстрируется
- * применение внутренних классов.
+ * анонимных применение внутренних классов.
  *
  * @author Ломовской К.Ю.
  * @since 01.03.2020
  */
-public class InnerClassDemo extends Frame{
+public class AnonymousInnerClassDemo extends Frame{
 
     String msg = "";
 
-    public InnerClassDemo(){
-        addMouseListener(new MyMouseAdapter());
-        addWindowListener(new MyWindowAdapter());
+    public AnonymousInnerClassDemo(){
+        // Анонимный внутренний класс для обработки
+        // событий нажатия кнопок мыши
+        addMouseListener(new MyMouseAdapter(){
+            @Override
+            public void mousePressed(MouseEvent me) {
+                msg = "Mouse Pressed";
+                repaint();
+            }
+        });
+
+        addWindowListener(new WindowAdapter() {
+            @Override
+            public void windowClosing(WindowEvent e) {
+                System.exit(0);
+            }
+        });
     }
 
     // Внутренний класс для обработки
@@ -36,26 +47,16 @@ public class InnerClassDemo extends Frame{
         }
     }
 
-    // Внутренний класс для обработки событий нажатия
-    // экранной кнопки закрытя окна.
-    class MyWindowAdapter extends WindowAdapter {
-
-        @Override
-        public void windowClosing(WindowEvent e) {
-            System.exit(0);
-        }
-    }
-
     @Override // Вывести сведения о мыши
     public void paint(Graphics g) {
         g.drawString(msg, 20, 80);
     }
 
     public static void main(String[] args) {
-        InnerClassDemo appWin = new InnerClassDemo();
+        AnonymousInnerClassDemo appWin = new AnonymousInnerClassDemo();
 
         appWin.setSize(new Dimension(200, 150));
-        appWin.setTitle("InnerClassDemo");
+        appWin.setTitle("AnonymousInnerClassDemo");
         appWin.setVisible(true);
     }
 }
