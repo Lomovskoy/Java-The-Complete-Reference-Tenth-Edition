@@ -11,7 +11,7 @@ import java.util.Date;
  * класса URLConnection.
  *
  * @author Ломовской К.Ю.
- * @since 29.02.2020
+ * @since 01.03.2020
  */
 public class UCDemo {
 
