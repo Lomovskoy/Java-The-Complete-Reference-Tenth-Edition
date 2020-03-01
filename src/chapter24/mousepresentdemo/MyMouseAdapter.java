@@ -1,13 +1,10 @@
 package chapter24.mousepresentdemo;
 
-import chapter24.adapterdemo.AdapterDemo;
-
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
 /**
- * Класс демонстрирующий обработчик
- * событий только от щелчков и перемещения мыши.
+ * В это программе внутренние классы не применяются.
  *
  * @author Ломовской К.Ю.
  * @since 01.03.2020

@@ -4,8 +4,7 @@ import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 
 /**
- * Закрыть окно и выйти из программы при
- * нажатии экранной кнопки закрытя окна.
+ * В это программе внутренние классы не применяются.
  *
  * @author Ломовской К.Ю.
  * @since 01.03.2020

@@ -2,6 +2,12 @@ package chapter24.mousepresentdemo;
 
 import java.awt.*;
 
+/**
+ * В это программе внутренние классы не применяются.
+ *
+ * @author Ломовской К.Ю.
+ * @since 01.03.2020
+ */
 public class MousePresentDemo extends Frame {
 
     String msg = "";
