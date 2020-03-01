@@ -1,7 +1,5 @@
 package chapter24.adapterdemo;
 
-import chapter24.KeyEventDemo;
-
 import java.awt.*;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
