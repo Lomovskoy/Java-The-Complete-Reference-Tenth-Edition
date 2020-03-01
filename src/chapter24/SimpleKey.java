@@ -15,7 +15,7 @@ import java.awt.event.WindowEvent;
  */
 public class SimpleKey extends Frame implements KeyListener {
 
-    String mgs = "";
+    String msg = "";
     String keyState = "";
 
     public SimpleKey(){
@@ -25,7 +25,7 @@ public class SimpleKey extends Frame implements KeyListener {
 
     @Override // Обработать события от ввода с клавиатуры
     public void keyTyped(KeyEvent key) {
-        mgs += key.getKeyChar();
+        msg += key.getKeyChar();
         repaint();
     }
 
@@ -43,7 +43,7 @@ public class SimpleKey extends Frame implements KeyListener {
 
     @Override // Вывести нажатия клавиш
     public void paint(Graphics g) {
-        g.drawString(mgs, 20, 100);
+        g.drawString(msg, 20, 100);
         g.drawString(keyState, 20, 50);
     }
 

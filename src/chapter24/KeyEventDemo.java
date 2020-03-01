@@ -12,7 +12,7 @@ import java.awt.event.*;
  */
 public class KeyEventDemo extends Frame implements KeyListener {
 
-    String mgs = "";
+    String msg = "";
     String keyState = "";
 
     public KeyEventDemo(){
@@ -22,7 +22,7 @@ public class KeyEventDemo extends Frame implements KeyListener {
 
     @Override
     public void keyTyped(KeyEvent key) {
-        mgs += key.getKeyChar();
+        msg += key.getKeyChar();
         repaint();
     }
 
@@ -33,25 +33,25 @@ public class KeyEventDemo extends Frame implements KeyListener {
 
         switch (key){
             case KeyEvent.VK_F1:
-                mgs += "<F1>";
+                msg += "<F1>";
                 break;
             case KeyEvent.VK_F2:
-                mgs += "<F2>";
+                msg += "<F2>";
                 break;
             case KeyEvent.VK_F3:
-                mgs += "<F3>";
+                msg += "<F3>";
                 break;
             case KeyEvent.VK_PAGE_DOWN:
-                mgs += "<PgDn>";
+                msg += "<PgDn>";
                 break;
             case KeyEvent.VK_PAGE_UP:
-                mgs += "<PgUp>";
+                msg += "<PgUp>";
                 break;
             case KeyEvent.VK_LEFT:
-                mgs += "<Left Arrow>";
+                msg += "<Left Arrow>";
                 break;
             case KeyEvent.VK_RIGHT:
-                mgs += "<Right Arrow>";
+                msg += "<Right Arrow>";
                 break;
         }
         repaint();
@@ -65,7 +65,7 @@ public class KeyEventDemo extends Frame implements KeyListener {
 
     @Override // Вывести нажатия клавиш
     public void paint(Graphics g) {
-        g.drawString(mgs, 20, 100);
+        g.drawString(msg, 20, 100);
         g.drawString(keyState, 20, 50);
     }
 

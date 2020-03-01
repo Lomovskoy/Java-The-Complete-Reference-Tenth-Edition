@@ -11,7 +11,7 @@ import java.awt.event.*;
  */
 public class MouseEventsDemo extends Frame implements MouseListener, MouseMotionListener {
 
-    String mgs = "";
+    String msg = "";
 
     // Коардинаты положения курсора мыши
     int mouseX = 0;
@@ -25,7 +25,7 @@ public class MouseEventsDemo extends Frame implements MouseListener, MouseMotion
 
     @Override // Обработать события от щелчка кнопок мыши
     public void mouseClicked(MouseEvent me) {
-        mgs = mgs + " -- click received";
+        msg = msg + " -- click received";
         repaint();
     }
 
@@ -33,7 +33,7 @@ public class MouseEventsDemo extends Frame implements MouseListener, MouseMotion
     public void mousePressed(MouseEvent me) {
         mouseX = 100;
         mouseY = 100;
-        mgs = "Mouse exited";
+        msg = "Mouse exited";
         repaint();
     }
 
@@ -41,7 +41,7 @@ public class MouseEventsDemo extends Frame implements MouseListener, MouseMotion
     public void mouseReleased(MouseEvent me) {
         mouseX = 100;
         mouseY = 100;
-        mgs = "Mouse exited";
+        msg = "Mouse exited";
         repaint();
     }
 
@@ -49,7 +49,7 @@ public class MouseEventsDemo extends Frame implements MouseListener, MouseMotion
     public void mouseEntered(MouseEvent me) {
         mouseX = 100;
         mouseY = 100;
-        mgs = "Mouse down";
+        msg = "Mouse down";
         repaint();
     }
 
@@ -57,7 +57,7 @@ public class MouseEventsDemo extends Frame implements MouseListener, MouseMotion
     public void mouseExited(MouseEvent me) {
         mouseX = 100;
         mouseY = 100;
-        mgs = "Mouse released";
+        msg = "Mouse released";
         repaint();
     }
 
@@ -66,19 +66,19 @@ public class MouseEventsDemo extends Frame implements MouseListener, MouseMotion
         // Сохранение коардинат
         mouseX = me.getX();
         mouseY = me.getY();
-        mgs = "* mouse at " + mouseX + ", " + mouseY;
+        msg = "* mouse at " + mouseX + ", " + mouseY;
         repaint();
     }
 
     @Override // Обработать события перемещения мыши
     public void mouseMoved(MouseEvent me) {
-        mgs = "Moving mouse at " + me.getX() + ", " + me.getY();
+        msg = "Moving mouse at " + me.getX() + ", " + me.getY();
         repaint();
     }
 
     @Override // Вывести сообщение в окне на текущей позиции с коардинатами X, Y
     public void paint(Graphics g) {
-        g.drawString(mgs, mouseX, mouseY);
+        g.drawString(msg, mouseX, mouseY);
     }
 
     public static void main(String[] args) {
