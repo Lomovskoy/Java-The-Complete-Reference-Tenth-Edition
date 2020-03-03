@@ -60,11 +60,11 @@ public class XOR extends Frame {
         g.drawLine(chsX, chsY - 10, chsX, chsY + 10);
         g.setPaintMode();
     }
+
     public static void main(String[] args) {
         XOR appWin = new XOR();
         appWin.setSize(new Dimension(300, 260));
         appWin.setTitle("XOR");
         appWin.setVisible(true);
     }
-
 }
