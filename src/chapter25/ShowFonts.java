@@ -1,4 +1,4 @@
-package charapter25;
+package chapter25;
 
 import java.awt.*;
 import java.awt.event.WindowAdapter;
