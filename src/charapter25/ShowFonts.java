@@ -4,6 +4,13 @@ import java.awt.*;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 
+/**
+ * Класс демонстрирующий отображение
+ * некоторых шрифтов.
+ *
+ * @author Ломовской К.Ю.
+ * @since 03.03.2020
+ */
 public class ShowFonts extends Frame {
 
     String msg = "First five fonts: ";
