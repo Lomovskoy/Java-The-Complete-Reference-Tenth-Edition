@@ -60,7 +60,7 @@ public class ListDemo extends Frame implements ActionListener {
         repaint();
     }
 
-    @Override // Отобразить текуцщее варианты выбора
+    @Override // Отобразить текущее варианты выбора
     public void paint(Graphics g) {
         int[] idx;
 

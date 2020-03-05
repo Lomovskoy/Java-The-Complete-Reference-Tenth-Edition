@@ -59,7 +59,7 @@ public class ChoiceDemo extends Frame implements ItemListener {
         repaint();
     }
 
-    @Override // Отобразить текуцщее варианты выбора
+    @Override // Отобразить текущее варианты выбора
     public void paint(Graphics g) {
         msg = "Current OS: ";
         msg += os.getSelectedItem();

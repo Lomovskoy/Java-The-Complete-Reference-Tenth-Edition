@@ -57,7 +57,7 @@ public class CBoxGroup extends Frame implements ItemListener {
         repaint();
     }
 
-    @Override // Отобразить текуцщее состояние флажков
+    @Override // Отобразить текущее состояние флажков
     public void paint(Graphics g) {
         msg = "Current selection: ";
         msg += cbg.getSelectedCheckbox().getLabel();

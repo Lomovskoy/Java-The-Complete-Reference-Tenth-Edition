@@ -53,7 +53,7 @@ public class CheckBoxDemo extends Frame implements ItemListener {
         repaint();
     }
 
-    @Override // Отобразить текуцщее состояние флажков
+    @Override // Отобразить текущее состояние флажков
     public void paint(Graphics g) {
         msg = "Current state: ";
         g.drawString(msg, 20, 120);
