@@ -1,7 +1,5 @@
 package chapter26;
 
-import chapter25.MultiLine;
-
 import java.awt.*;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
