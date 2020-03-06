@@ -1,4 +1,4 @@
-package chapter24;
+package chapter26;
 
 import java.awt.*;
 import java.awt.event.ActionEvent;
