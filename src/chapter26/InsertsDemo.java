@@ -11,14 +11,14 @@ import java.awt.event.WindowEvent;
  * @author Ломовской К.Ю.
  * @since 07.03.2020
  */
-public class InsertDemo extends Frame {
+public class InsertsDemo extends Frame {
 
     private final static String msg = "The reasonable man adapts himself to the world;\n" +
             "the unreasonable one persists in trying to adapt the world to himself.\n" +
             "Therefore all progress depends on the unreasonable man.\n\n" +
             "        - George Bernard Shaw\n\n";
 
-    public InsertDemo(){
+    public InsertsDemo(){
 
         // В данном случае диспетчер граничной
         // компановки использцется по умолчанию
@@ -46,9 +46,9 @@ public class InsertDemo extends Frame {
     }
 
     public static void main(String[] args) {
-        InsertDemo appWin = new InsertDemo();
+        InsertsDemo appWin = new InsertsDemo();
         appWin.setSize(new Dimension(300, 220));
-        appWin.setTitle("InsertDemo");
+        appWin.setTitle("InsertsDemo");
         appWin.setVisible(true);
     }
 }
