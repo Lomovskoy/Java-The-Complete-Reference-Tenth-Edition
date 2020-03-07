@@ -36,14 +36,13 @@ public class MenuDemo extends Frame{
         edit.add(item7 = new MenuItem("Copy"));
         edit.add(item8 = new MenuItem("Paste"));
         edit.add(item9 = new MenuItem("-"));
-        mBar.add(edit);
 
         Menu sub = new Menu("Spetial");
         MenuItem item10, item11, item12;
         sub.add(item10 = new MenuItem("First"));
         sub.add(item11 = new MenuItem("Second"));
         sub.add(item12 = new MenuItem("Third"));
-        mBar.add(sub);
+        edit.add(sub);
 
         // Создать отмеаемые пункты меню
         debug = new CheckboxMenuItem("Debug");
