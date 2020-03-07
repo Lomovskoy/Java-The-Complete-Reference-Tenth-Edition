@@ -18,7 +18,7 @@ public class DoubleBuffer extends Frame {
     int mx, my;
     boolean flicker = true;
     Image buffer = null;
-    int w = 1000, h = 1000;
+    int w = 400, h = 400;
 
     public DoubleBuffer(){
 
@@ -83,7 +83,7 @@ public class DoubleBuffer extends Frame {
 
     public static void main(String[] args) {
         DoubleBuffer appWin = new DoubleBuffer();
-        appWin.setSize(new Dimension(1000, 1000));
+        appWin.setSize(new Dimension(400, 400));
         appWin.setTitle("DoubleBuffer");
         appWin.setVisible(true);
     }
