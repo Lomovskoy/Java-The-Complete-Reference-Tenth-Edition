@@ -153,7 +153,7 @@ public class DialogDemo extends Frame{
             repaint();
         }
     }
-    
+
     // Создать подкласс, производный от класса диалог
     class SampleDialog extends Dialog{
 
