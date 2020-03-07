@@ -4,17 +4,22 @@ import java.awt.*;
 import java.awt.event.*;
 
 /**
- * В это программе демонстрируется применение меню.
+ * В это программе демонстрируется применение
+ * диалогового окна.
  *
  * @author Ломовской К.Ю.
  * @since 07.03.2020
  */
-public class MenuDemo extends Frame{
+public class DialogDemo extends Frame{
 
     String msg = "";
     CheckboxMenuItem debug, test;
+    SampleDialog myDialog;
 
-    public MenuDemo(){
+    public DialogDemo(){
+
+        // Создать диалоговое окно
+        myDialog = new SampleDialog(this, "New Dialog Box");
 
         // Создать строку меню и ввести её в фрейм
         MenuBar mBar = new MenuBar();
@@ -100,9 +105,9 @@ public class MenuDemo extends Frame{
     }
 
     public static void main(String[] args) {
-        MenuDemo appWin = new MenuDemo();
+        DialogDemo appWin = new DialogDemo();
         appWin.setSize(new Dimension(250, 300));
-        appWin.setTitle("MenuDemo");
+        appWin.setTitle("DialogDemo");
         appWin.setVisible(true);
     }
 
@@ -114,9 +119,10 @@ public class MenuDemo extends Frame{
         public void actionPerformed(ActionEvent ae) {
             msg = "You selected ";
             String arg = ae.getActionCommand();
-            if (arg.equals("New..."))
+            if (arg.equals("New...")) {
                 msg += "New.";
-            else if (arg.equals("Open..."))
+                myDialog.setVisible(true);
+            } else if (arg.equals("Open..."))
                 msg += "Open.";
             else if (arg.equals("Close"))
                 msg += "Close.";
@@ -145,6 +151,34 @@ public class MenuDemo extends Frame{
         @Override // Обработать события в пунктах меню
         public void itemStateChanged(ItemEvent ie) {
             repaint();
+        }
+    }
+    
+    // Создать подкласс, производный от класса диалог
+    class SampleDialog extends Dialog{
+
+        public SampleDialog(Frame parent, String title) {
+            super(parent, title, false);
+            setLayout(new FlowLayout());
+            setSize(300, 200);
+
+            add(new Label("Press this button:"));
+
+            Button b;
+            add(b = new Button("Cancel"));
+            b.addActionListener((ae) -> dispose());
+
+            addWindowListener(new WindowAdapter() {
+                @Override
+                public void windowClosing(WindowEvent e) {
+                    dispose();
+                }
+            });
+        }
+
+        @Override
+        public void paint(Graphics g){
+            g.drawString("This is in the dialog box", 20, 80);
         }
     }
 }
