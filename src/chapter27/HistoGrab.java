@@ -91,5 +91,4 @@ public class HistoGrab extends Frame {
         appWin.setTitle("HistoGrab");
         appWin.setVisible(true);
     }
-
 }
