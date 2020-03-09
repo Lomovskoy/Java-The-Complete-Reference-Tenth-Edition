@@ -49,7 +49,7 @@ public class ImageFilterDemo extends Frame implements ActionListener {
 
         // Загрузить изображение
         try {
-            File imageFile = new File("Alyona_Shirshova3.jpeg");
+            File imageFile = new File("Alyona_Shirshova.jpeg");
 
             // Загрузить изображение
             img = ImageIO.read(imageFile);
