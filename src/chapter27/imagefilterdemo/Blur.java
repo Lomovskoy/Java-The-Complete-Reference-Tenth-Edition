@@ -22,7 +22,7 @@ public class Blur extends Convolver{
 
                 for (int k =-1; k <= 1; k++){
                     for (int j =-1; j <= 1; j++){
-                        int rgb = imgPixels[(y + k) * width + x + y];
+                        int rgb = imgPixels[(y + k) * width + x + j];
                         int r = (rgb >> 16) & 0Xff;
                         int g = (rgb >> 8) & 0Xff;
                         int b = rgb & 0Xff;

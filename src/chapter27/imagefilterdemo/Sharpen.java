@@ -17,7 +17,7 @@ package chapter27.imagefilterdemo;
  */
 public class Sharpen extends Convolver {
 
-    private final int clamp(int c){
+    private int clamp(int c){
         return (c > 255 ? 255 : (Math.max(c, 0)));
     }
 
@@ -38,9 +38,9 @@ public class Sharpen extends Convolver {
                         int g = (rgb >> 8) & 0Xff;
                         int b = rgb & 0Xff;
                         if (j == 0 && k == 0){
-                            r0 += r;
-                            g0 += g;
-                            b0 += b;
+                            r0 = r;
+                            g0 = g;
+                            b0 = b;
                         } else {
                             rs += r;
                             gs += g;

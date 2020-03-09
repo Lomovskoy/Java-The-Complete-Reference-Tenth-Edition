@@ -22,6 +22,7 @@ public class ImageFilterDemo extends Frame implements ActionListener {
     LoadedImage lim;
     Label lab;
     Button reset;
+    String packageName = "chapter27.imagefilterdemo.";
 
     // Наименование фильтров
     String[] filters = {"Grayscale", "Invert", "Contrast", "Blur", "Sharpen"};
@@ -48,7 +49,7 @@ public class ImageFilterDemo extends Frame implements ActionListener {
 
         // Загрузить изображение
         try {
-            File imageFile = new File("Alyona_Shirshova.jpeg");
+            File imageFile = new File("Alyona_Shirshova3.jpeg");
 
             // Загрузить изображение
             img = ImageIO.read(imageFile);
@@ -80,7 +81,7 @@ public class ImageFilterDemo extends Frame implements ActionListener {
                 lab.setText("Normal");
             } else {
                 // Получить выбранный фильтр
-                pif = (PlugInFilter) (Class.forName(a)).getConstructor().newInstance();
+                pif = (PlugInFilter) (Class.forName(packageName + a)).getConstructor().newInstance();
                 fimg = pif.filter(this, img);
                 lim.set(fimg);
                 lab.setText("Filtered: " + a);
