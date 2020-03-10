@@ -3,7 +3,7 @@ package chapter28.semdemo;
 import java.util.concurrent.Semaphore;
 
 /**
- * В это программе демонстрируется
+ * В этой программе демонстрируется
  * применение класа симафор.
  *
  * @author Ломовской К.Ю.
