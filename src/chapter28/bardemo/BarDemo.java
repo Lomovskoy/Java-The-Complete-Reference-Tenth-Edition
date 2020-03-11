@@ -19,5 +19,8 @@ public class BarDemo {
         new Thread(new MyTread(cb, "A")).start();
         new Thread(new MyTread(cb, "B")).start();
         new Thread(new MyTread(cb, "C")).start();
+        new Thread(new MyTread(cb, "X")).start();
+        new Thread(new MyTread(cb, "Y")).start();
+        new Thread(new MyTread(cb, "Z")).start();
     }
 }
