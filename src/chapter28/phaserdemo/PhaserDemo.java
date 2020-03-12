@@ -21,22 +21,22 @@ public class PhaserDemo {
         new Thread(new MyThread(phaser, "C")).start();
 
         // Ожидать завершения всеми потоками первой фазы
-        curPhase = phaser.getPhase();
+        curPhase = phaser.getPhase() + 1;
         phaser.arriveAndAwaitAdvance();
         System.out.println("Фаза " + curPhase + " завершена");
 
         // Ожидать завершения всеми потоками второй фазы
-        curPhase = phaser.getPhase();
+        curPhase = phaser.getPhase() + 1;
         phaser.arriveAndAwaitAdvance();
         System.out.println("Фаза " + curPhase + " завершена");
 
         // Ожидать завершения всеми потоками третей фазы
-        curPhase = phaser.getPhase();
+        curPhase = phaser.getPhase() + 1;
         phaser.arriveAndAwaitAdvance();
         System.out.println("Фаза " + curPhase + " завершена");
 
         // Снять основной поток исполнения с регистрации
-        phaser.arriveAndAwaitAdvance();
+        phaser.arriveAndDeregister();
 
         if (phaser.isTerminated())
             System.out.println("Синхронизатор фаз завершён");

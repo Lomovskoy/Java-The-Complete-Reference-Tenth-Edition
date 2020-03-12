@@ -31,7 +31,7 @@ public class MyThread implements Runnable {
         // совсем не обязательно для правильного
         // функционирования синхронизатора фаз
          try {
-             Thread.sleep(10);
+             Thread.sleep(100);
          } catch (InterruptedException e){
              System.out.println(e);
          }
@@ -44,13 +44,13 @@ public class MyThread implements Runnable {
         // совсем не обязательно для правильного
         // функционирования синхронизатора фаз
         try {
-            Thread.sleep(10);
+            Thread.sleep(100);
         } catch (InterruptedException e){
             System.out.println(e);
         }
 
         System.out.println("Поток " + name + " начинает третью фазу");
-        phaser.arriveAndAwaitAdvance(); // Известить о достижении фазы
+        phaser.arriveAndDeregister(); // Известить о достижении фазы
                                         // и снять потоки с регистрации
     }
 }
