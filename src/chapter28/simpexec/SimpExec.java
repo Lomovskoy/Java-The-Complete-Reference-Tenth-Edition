@@ -1,13 +1,11 @@
 package chapter28.simpexec;
 
-import chapter28.sdldemo.MyTread;
-
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 /**
- * В этой программе демонстрируется \
+ * В этой программе демонстрируется
  * простой пример применения исполнителя.
  *
  * @author Ломовской К.Ю.
