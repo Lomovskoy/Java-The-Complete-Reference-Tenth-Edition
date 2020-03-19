@@ -49,7 +49,9 @@ public class FJExperiment {
         // Завершить измерение времени выполнения задачи
         endT = System.currentTimeMillis();
 
-        System.out.println("Уровень паралелизма: " + pLevel);
+        System.out.println("Системный уровень паралелизма: " + new ForkJoinPool().getParallelism());
+        System.out.println("Количество ядер в системе: " + Runtime.getRuntime().availableProcessors());
+        System.out.println("Заданый уровень паралелизма: " + pLevel);
         System.out.println("Порог последовательной обработки: " + threshold);
         System.out.println("Истёкшее время: " + ((endT - beginT)) + " мс");
         System.out.println();
