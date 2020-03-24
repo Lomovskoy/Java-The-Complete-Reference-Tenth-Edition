@@ -1,6 +1,8 @@
 package chapter29.streamdemo6;
 
 import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
@@ -38,7 +40,7 @@ public class StreamDemo6 {
         );
         System.out.println();
 
-        // Получитьновый поток для отображения
+        // Получить новый поток для отображения
         nameAndPhone = myList.stream().map((a)->
                 new NamePhone(a.name, a.phoneNum)
         );
@@ -50,5 +52,29 @@ public class StreamDemo6 {
         npSet.forEach((a)->
                 System.out.println(a.name + ": " + a.phoneNum)
         );
+
+        // Получить новый поток для отображения
+        nameAndPhone = myList.stream().map((a)->
+                new NamePhone(a.name, a.phoneNum)
+        );
+
+        // Другие способы преобразования stream в солекции
+        LinkedList<NamePhone> npLinkList = nameAndPhone.collect(()->
+                new LinkedList<>(),
+                (list, element)-> list.add(element),
+                (listA, listB)-> listA.addAll(listB)
+        );
+
+        // Получить новый поток для отображения
+        nameAndPhone = myList.stream().map((a)->
+                new NamePhone(a.name, a.phoneNum)
+        );
+
+        HashSet<NamePhone> npHashSet = nameAndPhone.collect(
+                HashSet::new,
+                HashSet::add,
+                HashSet::addAll
+        );
+        System.out.println();
     }
 }
