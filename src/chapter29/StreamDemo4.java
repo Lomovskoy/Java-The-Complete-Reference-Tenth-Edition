@@ -23,7 +23,7 @@ public class StreamDemo4 {
         myList.add(17.0);
         myList.add(5.0);
 
-        // Отобразить квадратные корни элементов из 
+        // Отобразить квадратные корни элементов из
         // списка myList на новый поток данных
         Stream<Double> sqrtRootStrm = myList.stream().map((a)-> Math.sqrt(a));
 
