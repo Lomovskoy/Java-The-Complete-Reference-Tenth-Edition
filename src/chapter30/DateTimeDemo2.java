@@ -20,6 +20,6 @@ public class DateTimeDemo2 {
         System.out.println(curDate.format(DateTimeFormatter.ofLocalizedDate(FormatStyle.FULL)));
 
         LocalDateTime curTime = LocalDateTime.now();
-        System.out.println(curDate.format(DateTimeFormatter.ofLocalizedDate(FormatStyle.SHORT)));
+        System.out.println(curTime.format(DateTimeFormatter.ofLocalizedDate(FormatStyle.SHORT)));
     }
 }
