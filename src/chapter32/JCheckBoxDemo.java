@@ -17,7 +17,7 @@ public class JCheckBoxDemo implements ItemListener {
 
     public JCheckBoxDemo(){
         // Установить фрейм средствами класаса JFrame
-        JFrame jFrame = new JFrame("JButtonDemo");
+        JFrame jFrame = new JFrame("JCheckBoxDemo");
         jFrame.setLayout(new FlowLayout());
         jFrame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         jFrame.setSize(250, 100);

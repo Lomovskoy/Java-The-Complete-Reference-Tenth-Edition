@@ -17,7 +17,7 @@ public class JRadioButtonDemo implements ActionListener {
 
     public JRadioButtonDemo(){
         // Установить фрейм средствами класаса JFrame
-        JFrame jFrame = new JFrame("JButtonDemo");
+        JFrame jFrame = new JFrame("JRadioButtonDemo");
         jFrame.setLayout(new FlowLayout());
         jFrame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         jFrame.setSize(250, 100);

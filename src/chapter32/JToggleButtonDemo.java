@@ -14,7 +14,7 @@ public class JToggleButtonDemo {
 
     public JToggleButtonDemo(){
         // Установить фрейм средствами класаса JFrame
-        JFrame jFrame = new JFrame("JButtonDemo");
+        JFrame jFrame = new JFrame("JToggleButtonDemo");
         jFrame.setLayout(new FlowLayout());
         jFrame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         jFrame.setSize(200, 100);
