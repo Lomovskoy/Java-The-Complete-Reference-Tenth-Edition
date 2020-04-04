@@ -1,7 +1,5 @@
 package chapter32;
 
-import chapter32.jtabbedpanedemo.JTabbedPaneDemo;
-
 import javax.swing.*;
 import java.awt.*;
 
