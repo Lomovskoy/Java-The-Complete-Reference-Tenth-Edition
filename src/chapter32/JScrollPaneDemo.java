@@ -8,7 +8,7 @@ import java.awt.*;
  * примение компонента JScrollPane.
  *
  * @author Ломовской К.Ю.
- * @since 03.04.2020
+ * @since 04.04.2020
  */
 public class JScrollPaneDemo {
 

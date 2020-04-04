@@ -1,8 +1,6 @@
 package chapter32;
 
 import javax.swing.*;
-import javax.swing.event.ListSelectionEvent;
-import javax.swing.event.ListSelectionListener;
 import java.awt.*;
 
 /**
@@ -10,7 +8,7 @@ import java.awt.*;
  * примение компонента JList.
  *
  * @author Ломовской К.Ю.
- * @since 03.04.2020
+ * @since 04.04.2020
  */
 public class JListDemo {
 
