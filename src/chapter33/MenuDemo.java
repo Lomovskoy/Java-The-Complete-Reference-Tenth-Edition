@@ -104,8 +104,8 @@ public class MenuDemo implements ActionListener {
         jmiReset.addActionListener(this);
         jmiAbout.addActionListener(this);
 
-        // Ввести метку на панельсодержимого
-        jFrame.add(menuBar);
+        // Ввести метку на панель содержимого
+        jFrame.add(jLabel);
 
         // Ввести строку меню во фрейм
         jFrame.setJMenuBar(menuBar);
