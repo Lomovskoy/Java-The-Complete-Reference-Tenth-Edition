@@ -1,7 +1,5 @@
 package chapter33;
 
-import chapter32.JButtonDemo;
-
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
