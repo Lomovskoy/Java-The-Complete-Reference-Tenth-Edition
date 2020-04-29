@@ -126,19 +126,6 @@ public class PopMenuDemo implements ActionListener {
         jpu.add(jmiCopy);
         jpu.add(jmiPaste);
 
-        // Ввсти приёмники действия от пунктов меню
-        jmiOpen.addActionListener(this);
-        jmiClose.addActionListener(this);
-        jmiSave.addActionListener(this);
-        jmiExit.addActionListener(this);
-        jmiRed.addActionListener(this);
-        jmiGreen.addActionListener(this);
-        jmiBlue.addActionListener(this);
-        jmiHigh.addActionListener(this);
-        jmiLow.addActionListener(this);
-        jmiReset.addActionListener(this);
-        jmiAbout.addActionListener(this);
-
         // Ввсти приёмники действия от всплывающего меню
         jFrame.addMouseListener(new MouseAdapter() {
             @Override
@@ -153,6 +140,23 @@ public class PopMenuDemo implements ActionListener {
                     jpu.show(me.getComponent(), me.getX(), me.getY());
             }
         });
+
+        // Ввсти приёмники действия от пунктов меню
+        jmiOpen.addActionListener(this);
+        jmiClose.addActionListener(this);
+        jmiSave.addActionListener(this);
+        jmiExit.addActionListener(this);
+        jmiRed.addActionListener(this);
+        jmiGreen.addActionListener(this);
+        jmiBlue.addActionListener(this);
+        jmiHigh.addActionListener(this);
+        jmiLow.addActionListener(this);
+        jmiReset.addActionListener(this);
+        jmiAbout.addActionListener(this);
+        jmiCut.addActionListener(this);
+        jmiCopy.addActionListener(this);
+        jmiPaste.addActionListener(this);
+
 
         // Ввести метку на панель содержимого
         jFrame.add(jLabel);
