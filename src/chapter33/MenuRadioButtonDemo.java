@@ -4,21 +4,23 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.InputEvent;
+import java.awt.event.KeyEvent;
 
 /**
  * В этой программе демонстрируются
- * простое главное меню.
+ * простое главное меню с использованием переключателей.
  *
  * @author Ломовской К.Ю.
- * @since 28.04.2020
+ * @since 29.04.2020
  */
-public class MenuDemo implements ActionListener {
+public class MenuRadioButtonDemo implements ActionListener {
 
     JLabel jLabel;
 
-    MenuDemo() {
+    MenuRadioButtonDemo() {
         // Создать новый контейнер типа JFrame
-        JFrame jFrame = new JFrame("Main Menu"); // Демонстрация меню
+        JFrame jFrame = new JFrame("Main Menu Radio Button"); // Демонстрация меню
 
         // Указать диспетчер потоковой компановки типа FlowLayout
         jFrame.setLayout(new FlowLayout());
@@ -37,11 +39,20 @@ public class MenuDemo implements ActionListener {
         JMenuBar menuBar = new JMenuBar();
 
         // Создать меню File
-        JMenu jmFile = new JMenu("File");                 // Файл
-        JMenuItem jmiOpen = new JMenuItem("Open");      // Открыть
-        JMenuItem jmiClose = new JMenuItem("Close");    // Закрыть
-        JMenuItem jmiSave = new JMenuItem("Save");      // Сохранить
-        JMenuItem jmiExit = new JMenuItem("Exit");      // Выйти
+        JMenu jmFile = new JMenu("File");                                // Файл
+        jmFile.setMnemonic(KeyEvent.VK_F);
+
+        JMenuItem jmiOpen = new JMenuItem("Open", KeyEvent.VK_O);      // Открыть
+        jmiOpen.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_O, InputEvent.CTRL_DOWN_MASK));
+
+        JMenuItem jmiClose = new JMenuItem("Close", KeyEvent.VK_C);    // Закрыть
+        jmiClose.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_C, InputEvent.CTRL_DOWN_MASK));
+
+        JMenuItem jmiSave = new JMenuItem("Save", KeyEvent.VK_S);      // Сохранить
+        jmiSave.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_S, InputEvent.CTRL_DOWN_MASK));
+
+        JMenuItem jmiExit = new JMenuItem("Exit", KeyEvent.VK_E);      // Выйти
+        jmiExit.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_E, InputEvent.CTRL_DOWN_MASK));
 
         jmFile.add(jmiOpen);
         jmFile.add(jmiClose);
@@ -51,13 +62,15 @@ public class MenuDemo implements ActionListener {
         menuBar.add(jmFile);
 
         // Создать меню Options
-        JMenu jmOptions = new JMenu("Options");           // Параметры
+        JMenu jmOptions = new JMenu("Options");                           // Параметры
 
-        // Создать подменю Colors
-        JMenu jmColors = new JMenu("Colors");             // Цвета
-        JMenuItem jmiRed = new JMenuItem("Red");        // Красный
-        JMenuItem jmiGreen = new JMenuItem("Green");    // Зелёный
-        JMenuItem jmiBlue = new JMenuItem("Blue");      // Синий
+        // Создать подменю Colors используя флажки,
+        // что бы пользователь мог выбрть сразу несколько цветов
+        JMenu jmColors = new JMenu("Colors");                             // Цвета
+
+        JCheckBoxMenuItem jmiRed = new JCheckBoxMenuItem("Red");        // Красный
+        JCheckBoxMenuItem jmiGreen = new JCheckBoxMenuItem("Green");    // Зелёный
+        JCheckBoxMenuItem jmiBlue = new JCheckBoxMenuItem("Blue");      // Синий
 
         jmColors.add(jmiRed);
         jmColors.add(jmiGreen);
@@ -65,16 +78,28 @@ public class MenuDemo implements ActionListener {
         jmOptions.add(jmColors);
 
         // Создать меню Priority
-        JMenu jmPriority = new JMenu("Priority");         // Приоритет
-        JMenuItem jmiHigh = new JMenuItem("High");      // Высокий
-        JMenuItem jmiLow = new JMenuItem("Low");        // Низкий
+        JMenu jmPriority = new JMenu("Priority");                           // Приоритет
+
+        // Использовать кнопки перелючатели для установки приоритета.
+        // Благодаря этому в меню не только отображается установленный
+        // приоритет, но и гарантируется установка одного и только
+        // одного приоритета. Исходно выбирается кнопка переключатель
+        // в пункте меню High.
+        JRadioButtonMenuItem jmiHigh = new JRadioButtonMenuItem("High", true);  // Высокий
+        JRadioButtonMenuItem jmiLow = new JRadioButtonMenuItem("Low");                  // Низкий
 
         jmPriority.add(jmiHigh);
         jmPriority.add(jmiLow);
         jmOptions.add(jmPriority);
 
+        // Создать группу кнопок переключателей в
+        // пунктах подменю Priority
+        ButtonGroup bg = new ButtonGroup();
+        bg.add(jmiHigh);
+        bg.add(jmiLow);
+
         // Создать пункт в меню Reset
-        JMenuItem jmiReset = new JMenuItem("Reset");    // Сбросить
+        JMenuItem jmiReset = new JMenuItem("Reset");                       // Сбросить
 
         jmOptions.addSeparator();
         jmOptions.add(jmiReset);
@@ -130,6 +155,6 @@ public class MenuDemo implements ActionListener {
 
     public static void main(String[] args) {
         // Создать фрейм в потоке деспетчиризации событий
-        SwingUtilities.invokeLater(MenuDemo::new);
+        SwingUtilities.invokeLater(MenuRadioButtonDemo::new);
     }
 }

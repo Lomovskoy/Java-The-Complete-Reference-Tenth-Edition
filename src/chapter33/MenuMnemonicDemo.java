@@ -12,7 +12,7 @@ import java.awt.event.KeyEvent;
  * простое главное меню с использованием мнемоников.
  *
  * @author Ломовской К.Ю.
- * @since 28.04.2020
+ * @since 29.04.2020
  */
 public class MenuMnemonicDemo implements ActionListener {
 
@@ -30,7 +30,7 @@ public class MenuMnemonicDemo implements ActionListener {
 
         // Завершить прикладную программу, как только
         // пользователь закроет её окно
-        jFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        jFrame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 
         // Создать метку для отображдения результатов выбора для меню
         jLabel = new JLabel();
@@ -66,9 +66,9 @@ public class MenuMnemonicDemo implements ActionListener {
 
         // Создать подменю Colors
         JMenu jmColors = new JMenu("Colors");             // Цвета
-        JMenuItem jmiRed = new JMenuItem("Red");        // Открыть
-        JMenuItem jmiGreen = new JMenuItem("Green");    // Открыть
-        JMenuItem jmiBlue = new JMenuItem("Blue");      // Открыть
+        JMenuItem jmiRed = new JMenuItem("Red");        // Красный
+        JMenuItem jmiGreen = new JMenuItem("Green");    // Зелёный
+        JMenuItem jmiBlue = new JMenuItem("Blue");      // Синий
 
         jmColors.add(jmiRed);
         jmColors.add(jmiGreen);
@@ -77,8 +77,8 @@ public class MenuMnemonicDemo implements ActionListener {
 
         // Создать меню Priority
         JMenu jmPriority = new JMenu("Priority");         // Приоритет
-        JMenuItem jmiHigh = new JMenuItem("High");      // Открыть
-        JMenuItem jmiLow = new JMenuItem("Low");        // Открыть
+        JMenuItem jmiHigh = new JMenuItem("High");      // Высокий
+        JMenuItem jmiLow = new JMenuItem("Low");        // Низкий
 
         jmPriority.add(jmiHigh);
         jmPriority.add(jmiLow);
