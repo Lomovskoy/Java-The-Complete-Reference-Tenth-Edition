@@ -157,7 +157,6 @@ public class PopMenuDemo implements ActionListener {
         jmiCopy.addActionListener(this);
         jmiPaste.addActionListener(this);
 
-
         // Ввести метку на панель содержимого
         jFrame.add(jLabel);
 
