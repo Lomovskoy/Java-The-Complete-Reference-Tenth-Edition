@@ -22,13 +22,13 @@ public class JavaFXSkel extends Application {
         launch(args);
     }
 
-    // Переопределить метод init
+    // Переопределить метод init()
     @Override
     public void init(){
         System.out.println("В теле метода init().");
     }
 
-    // Переопределить метод init
+    // Переопределить метод start()
     @Override
     public void start(Stage myStage) {
 
