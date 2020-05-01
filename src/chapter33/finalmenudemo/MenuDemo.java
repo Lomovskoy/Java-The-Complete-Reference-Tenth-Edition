@@ -1,7 +1,5 @@
 package chapter33.finalmenudemo;
 
-import chapter33.ToolBarMenuDemo;
-
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
