@@ -1,8 +1,6 @@
 package chapter34;
 
 import javafx.application.Application;
-import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.canvas.Canvas;
@@ -97,7 +95,7 @@ public class DirectDrawDemo extends Application {
 
         // Ввесдите холст и кнопку в граф сцены
         rootNode.getChildren().addAll(myCanvas, btnChangeColor);
-        
+
         // Показать подмостки и сцену на них
         myStage.show();
     }
