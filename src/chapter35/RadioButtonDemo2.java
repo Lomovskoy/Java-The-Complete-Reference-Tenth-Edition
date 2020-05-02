@@ -4,22 +4,26 @@ import javafx.application.Application;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
-import javafx.scene.image.ImageView;
 import javafx.scene.layout.FlowPane;
 import javafx.stage.Stage;
 
 /**
- * В этой программе демонстрируются применение кнопок переключателя.
- * Это Java-FX приложение реагирает на событие действия, генерируемые
- * выбираемыми кнопками-переключатлями. В нём демонстрируется так же
- * активизация кнопки переключателя под управлением программы.
+ * В этой программе демонстрируются получение кнопки переключателя,
+ * выбранной в текущей моент из группы, под управлением программы,
+ * когда в этом возникает потребность, вместо реагирования на
+ * событие или изменения.
+ *
+ * В данном примере события, связанные в кнопками переключателями,
+ * не обрабатываются. Вместо этого просто получается выбранная в
+ * данный момент кнопка переключатель, когда нажимается экранная
+ * кнопка Confirm Transport Selection.
  *
  * @author Ломовской К.Ю.
  * @since 02.05.2020
  */
-public class RadioButtonDemo extends Application {
+public class RadioButtonDemo2 extends Application {
 
-
+    ToggleGroup toggleGroup;
     Label response;
 
     public static void main(String[] args) {
@@ -32,7 +36,7 @@ public class RadioButtonDemo extends Application {
     public void start(Stage stage) {
 
         // Присвоить заголовок подмосткам
-        stage.setTitle("Demonstrate Radio Button");
+        stage.setTitle("Demonstrate Radio Button 2");
 
         // Используется панель поточной компоновки типа FlowPane
         // в качестве корневого узла и установить промежутки между
@@ -43,13 +47,18 @@ public class RadioButtonDemo extends Application {
         rootNode.setAlignment(Pos.CENTER);
 
         // Создать сцену
-        Scene myScene = new Scene(rootNode, 220, 120);
+        Scene myScene = new Scene(rootNode, 200, 140);
 
         // Установить сцену на подмостках
         stage.setScene(myScene);
 
+        Label choose = new Label("        Selected a transport type.        ");
+
         // Создать метку
-        response = new Label("");
+        response = new Label("No transport confirmed");
+
+        // Создать экранную кнопку для подтверждения
+        Button btnConfirm = new Button("Confirm transport selected");
 
         // Создать кнопки переключатли
         RadioButton rbtTrain = new RadioButton("Train");
@@ -57,25 +66,34 @@ public class RadioButtonDemo extends Application {
         RadioButton rbtAirplane = new RadioButton("Airplane");
 
         // Создать группу кнопок переключателей
-        ToggleGroup toggleGroup = new ToggleGroup();
+        toggleGroup = new ToggleGroup();
 
         // ввести кнопки в группу
         rbtTrain.setToggleGroup(toggleGroup);
         rbtCar.setToggleGroup(toggleGroup);
         rbtAirplane.setToggleGroup(toggleGroup);
 
-        // Обработать события действия от кнопок переключателей
-        rbtTrain.setOnAction(ae -> response.setText("Transport selected is train"));
-        rbtCar.setOnAction(ae -> response.setText("Transport selected is car."));
-        rbtAirplane.setOnAction(ae -> response.setText("Transport selected is airplane"));
-
         // Инициировать события от первой выбранной кнопки переключателя.
         // В итоге кнопка переключателяь выбирается и наступает событие
         // действия от этой кнопки перключателя.
-        rbtTrain.fire();
+        rbtTrain.setSelected(Boolean.TRUE);
+
+        // Обработать событие от кнопки подтверждения выбора транспортного средства
+        btnConfirm.setOnAction(ae-> {
+            // Получить выбранную в данный момент кнопку переключатель
+            RadioButton radioButton = (RadioButton) toggleGroup.getSelectedToggle();
+
+            // Отобразить результат выбора транспортного средства
+            response.setText(radioButton.getText() + " is selected");
+        });
+
+        // Использовать разделитель, что бы улучшить порядок расположения
+        // элементов управления
+        Separator separator = new Separator();
+        separator.setPrefHeight(180);
 
         // Ввести изображения в граф сцены
-        rootNode.getChildren().addAll(rbtTrain, rbtCar, rbtAirplane, response);
+        rootNode.getChildren().addAll(choose, rbtTrain, rbtCar, rbtAirplane, separator, btnConfirm, response);
 
         // Показать подмостки и сцену на них
         stage.show();
