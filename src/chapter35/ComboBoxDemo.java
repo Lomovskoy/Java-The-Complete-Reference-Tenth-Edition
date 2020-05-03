@@ -5,21 +5,21 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
+import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
-import javafx.scene.control.ListView;
-import javafx.scene.control.MultipleSelectionModel;
 import javafx.scene.layout.FlowPane;
 import javafx.stage.Stage;
 
 /**
  * В этой программе демонстрируются
- * применение придставления списка.
+ * применение комбинированного списка.
  *
  * @author Ломовской К.Ю.
  * @since 03.05.2020
  */
-public class ListViewDemo extends Application {
+public class ComboBoxDemo extends Application {
 
+    ComboBox<String> cbTransport;
     Label response;
 
     public static void main(String[] args) {
@@ -32,7 +32,7 @@ public class ListViewDemo extends Application {
     public void start(Stage stage) {
 
         // Присвоить заголовок подмосткам
-        stage.setTitle("List View Demo");
+        stage.setTitle("Combo Box Demo");
 
         // Используется панель поточной компоновки типа FlowPane
         // в качестве корневого узла и установить промежутки между
@@ -43,38 +43,33 @@ public class ListViewDemo extends Application {
         rootNode.setAlignment(Pos.CENTER);
 
         // Создать сцену
-        Scene myScene = new Scene(rootNode, 200, 120);
+        Scene myScene = new Scene(rootNode, 280, 120);
 
         // Установить сцену на подмостках
         stage.setScene(myScene);
 
-        response = new Label("Selected a transport type.");
+        response = new Label();
 
         // Создать список типа ObservableList из
         // элементов для представления списка
         ObservableList<String> transportType = FXCollections.observableArrayList("Train", "Car", "Airplane");
 
-        // Создать представление списка
-        ListView<String> lvTransport = new ListView<>(transportType);
+        // Создать комбинированный список
+        cbTransport = new ComboBox<>(transportType);
 
-        // Создать предпочтительную ширину и высоту
-        // представления списка
-        lvTransport.setPrefSize(80, 80);
+        // Установить значение по умолчанию
+        cbTransport.setValue("Train");
 
-        // Получить модель выбора для представления списка
-        MultipleSelectionModel<String> lvSelModel = lvTransport.getSelectionModel();
+        // Установить метку ответной реакции на выбор по умолчанию
+        response.setText("Transport selected is " + cbTransport.getValue());
 
-        // Ввести приёмник событий измерения, чтобы реагировать
-        // на выборэлементов в представлении списка
-        lvSelModel.selectedItemProperty().addListener((changed, oldVal, newVal) ->
-            response.setText("Transport selected is " + newVal)
-        );
+        // Принимать события действия от комбинированного списка
+        cbTransport.setOnAction(ae-> response.setText("Transport selected is " + cbTransport.getValue()));
 
         // Ввести изображения в граф сцены
-        rootNode.getChildren().addAll(lvTransport, response);
+        rootNode.getChildren().addAll(cbTransport, response);
 
         // Показать подмостки и сцену на них
         stage.show();
-
     }
 }
