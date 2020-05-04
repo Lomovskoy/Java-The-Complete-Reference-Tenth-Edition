@@ -15,7 +15,7 @@ import javafx.stage.Stage;
  * простое главное меню Java-FX.
  *
  * @author Ломовской К.Ю.
- * @since 28.04.2020
+ * @since 04.05.2020
  */
 public class MenuDemo extends Application {
 
