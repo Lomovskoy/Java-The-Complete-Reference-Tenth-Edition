@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.Enumeration;
 
-public class PostParametrsServlet extends GenericServlet {
+public class PostParametrServlet extends GenericServlet {
 
     @Override
     public void service(ServletRequest request, ServletResponse response) throws ServletException, IOException {

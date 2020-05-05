@@ -10,7 +10,7 @@ public class HelloServlet extends GenericServlet {
     public void service(ServletRequest request, ServletResponse response) throws IOException {
         response.setContentType("text/html");
         PrintWriter pw = response.getWriter();
-        pw.println("<B>Я тебя люблю моя зайка - твой мягкишек!");
+        pw.println("<B>Hello World!");
         pw.close();
     }
 }
