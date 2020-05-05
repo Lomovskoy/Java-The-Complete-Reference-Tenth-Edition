@@ -7,6 +7,13 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 
+/**
+ * В этой программе демонстрируются
+ * обработка Http запроса GET.
+ *
+ * @author Ломовской К.Ю.
+ * @since 05.05.2020
+ */
 public class ColorsGetServlet extends HttpServlet {
 
     @Override
